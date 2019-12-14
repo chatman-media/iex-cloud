@@ -46,7 +46,8 @@ Call any methods:
 
 ```ts
 import { metadata } from 'iex-ts-client';
-console.log(metadata());
+
+metadata().then(result => console.log(result));
 ```
 
 ## Implementation Status
@@ -248,13 +249,19 @@ you want a particular API to be developed next, please open an issue.
 - [ ] Stats Records
 - [ ] TOPS
 
+## Documentation
+
+See documentation [here](https://zishe.github.io/iex-ts-client/)
+
 ## Contributing
 
 See [CONTRIBUTING](.github/CONTRIBUTING.md).
 
-## License
+## Copyright and License
 
-[iexcloud][] is released under the MIT license. Please see the [LICENSE][] file for more information.
+[MIT License](LICENSE.md) Copyright (c) 2019 [Alexander Kireev](https://github.com/zishe/) and [Contributors](CHANGELOG.md).
+
+Data provided for free by [IEX Cloud](https://iexcloud.io), see [terms](https://iexcloud.io/terms/).
 
 [1]: https://iexcloud.io
 [2]: https://github.com/zishe/iex-ts-client/blob/master/examples/iexcloud/README.md
