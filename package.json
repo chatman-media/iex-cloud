@@ -1,6 +1,6 @@
 {
   "name": "iex-ts-client",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "IEX Cloud API TypeScript Client",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -22,9 +22,9 @@
     "doc:html": "typedoc lib/ --theme ./node_modules/typedoc-neo-theme/bin/default --exclude **/*.spec.ts --target ES6 --mode file --out build/docs",
     "doc:json": "typedoc lib/ --theme ./node_modules/typedoc-neo-theme/bin/default --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
-    "clean": "trash build test",
+    "clean": "trash build",
     "version": "standard-version",
-    "prepare-release": "run-s reset test cov:check doc:html version doc:publish"
+    "prepare-release": "run-s doc:html version doc:publish"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
