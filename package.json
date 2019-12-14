@@ -24,8 +24,7 @@
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
     "test": "echo \"No test specified\"",
     "clean": "trash build",
-    "version": "standard-version",
-    "prepare-release": "run-s doc:html version doc:publish"
+    "prepare-release": "run-s doc:html standard-version doc:publish"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
