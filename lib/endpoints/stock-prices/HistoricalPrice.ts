@@ -1,8 +1,8 @@
 import { isString } from 'util';
 
 import { ApiRequest } from '../../core/ApiRequest';
+import { Range } from '../../shared/Range';
 import { paramsToQuery } from '../../utils';
-import { Range } from '../shared/Range';
 
 /**
  * [Historical Prices](https://iexcloud.io/docs/api/#historical-prices)

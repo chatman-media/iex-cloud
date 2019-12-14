@@ -1,6 +1,6 @@
 import { ApiRequest } from '../../core/ApiRequest';
-import { PaymentType } from '../shared/PaymentType';
-import { SecurityType } from '../shared/SecurityType';
+import { PaymentType } from '../../shared/PaymentType';
+import { SecurityType } from '../../shared/SecurityType';
 
 /**
  * [Rights Issue](https://iexcloud.io/docs/api/#rights-issue)

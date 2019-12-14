@@ -3,7 +3,7 @@ export * from './corporate-actions';
 export * from './guides';
 // export * from './market-info';
 export * from './news';
-export * from './shared';
+export * from '../shared';
 // export * from './stock-fundamentals';
 export * from './stock-prices';
 export * from './stock-profiles';
