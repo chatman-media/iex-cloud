@@ -93,6 +93,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/metadata.html" class="tsd-kind-icon">Metadata</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/news.html" class="tsd-kind-icon">News</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ohlc.html" class="tsd-kind-icon">OHLC</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/payasyougoparams.html" class="tsd-kind-icon">PayAsYouGoParams</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/pricetarget.html" class="tsd-kind-icon">PriceTarget</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/quote.html" class="tsd-kind-icon">Quote</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/quoteqsparams.html" class="tsd-kind-icon">QuoteQSParams</a></li>
@@ -105,6 +106,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/spinoff.html" class="tsd-kind-icon">Spinoff</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/split.html" class="tsd-kind-icon">Split</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/stat.html" class="tsd-kind-icon">Stat</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/status.html" class="tsd-kind-icon">Status</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/systemevent.html" class="tsd-kind-icon">SystemEvent</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/timeseries.html" class="tsd-kind-icon">TimeSeries</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/timeseriesbyid.html" class="tsd-kind-icon">TimeSeriesById</a></li>
@@ -131,6 +133,8 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="globals.html#apirequest" class="tsd-kind-icon">ApiRequest</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#payasyougo" class="tsd-kind-icon">PayAsYouGo</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#usage" class="tsd-kind-icon">Usage</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#bonusissue" class="tsd-kind-icon">bonusIssue</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#company" class="tsd-kind-icon">company</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#datapoints" class="tsd-kind-icon">dataPoints</a></li>
@@ -156,6 +160,7 @@
 								<li class="tsd-kind-function"><a href="globals.html#spinoff" class="tsd-kind-icon">spinoff</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#splits" class="tsd-kind-icon">splits</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#stats" class="tsd-kind-icon">stats</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#status" class="tsd-kind-icon">status</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#timeseries" class="tsd-kind-icon">timeSeries</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#timeseriesbyid" class="tsd-kind-icon">timeSeriesById</a></li>
 							</ul>
@@ -292,6 +297,69 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/requestconfig.html" class="tsd-signature-type">RequestConfig</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="payasyougo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Pay<wbr>AsYou<wbr>Go</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">Pay<wbr>AsYou<wbr>Go<span class="tsd-signature-symbol">(</span>allow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in endpoints/account/PayAsYouGo.ts:9</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p><a href="https://iexcloud.io/docs/api/#pay-as-you-go">Pay as you go</a>
+									Used to toggle Pay-as-you-go on your account.</p>
+							</div></div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>allow: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+										<div class="lead">
+											<p>Pass true to enable Pay-as-you-go, or false to disable.</p>
+									</div></div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="usage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> Usage</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">Usage<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in endpoints/account/Usage.ts:8</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Used to retrieve current month usage for your account.</p>
+							</div></div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> type: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;&quot;</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+										<div class="lead">
+											<p>Optional. Used to specify which quota to return. Ex: <code>messages</code>, <code>rules</code>, <code>rule-records</code>, <code>alerts</code>, <code>alert-records</code></p>
+									</div></div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1178,6 +1246,27 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="status" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> status</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in endpoints/system-metadata/Status.ts:6</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Used to retrieve current system status.</p>
+							</div></div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="timeseries" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> time<wbr>Series</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -1303,6 +1392,9 @@
 						<a href="interfaces/ohlc.html" class="tsd-kind-icon">OHLC</a>
 					</li>
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/payasyougoparams.html" class="tsd-kind-icon">Pay<wbr>AsYou<wbr>GoParams</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/pricetarget.html" class="tsd-kind-icon">Price<wbr>Target</a>
 					</li>
 					<li class=" tsd-kind-interface root">
@@ -1337,6 +1429,9 @@
 					</li>
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/stat.html" class="tsd-kind-icon">Stat</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/status.html" class="tsd-kind-icon">Status</a>
 					</li>
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/systemevent.html" class="tsd-kind-icon">System<wbr>Event</a>
@@ -1385,6 +1480,12 @@
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#apirequest" class="tsd-kind-icon">Api<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#payasyougo" class="tsd-kind-icon">Pay<wbr>AsYou<wbr>Go</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#usage" class="tsd-kind-icon">Usage</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#bonusissue" class="tsd-kind-icon">bonus<wbr>Issue</a>
@@ -1460,6 +1561,9 @@
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#stats" class="tsd-kind-icon">stats</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#status" class="tsd-kind-icon">status</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#timeseries" class="tsd-kind-icon">time<wbr>Series</a>
