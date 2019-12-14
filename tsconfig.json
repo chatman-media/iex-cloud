@@ -7,7 +7,7 @@
     "types": ["node"],
     "allowJs": true,
     "outDir": "build",
-    "rootDir": "lib",
+    "rootDirs": ["lib", "build"],
     "strict": true,
     "noImplicitAny": true,
     "esModuleInterop": true,
