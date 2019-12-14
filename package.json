@@ -1,6 +1,6 @@
 {
   "name": "iex-ts-client",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "IEX Cloud API TypeScript Client",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
