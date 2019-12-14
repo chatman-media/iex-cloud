@@ -78,28 +78,24 @@ you want a particular API to be developed next, please open an issue.
 
 ### Stock Prices
 
-- [ ] Book
-- [ ] Charts — Use historical and intraday price endpoints.
+- [x] Book
 - [ ] Delayed Quote
-- [ ] Extended Hours Quote — Use quote endpoint.
-- [ ] Historical Prices
-- [ ] Intraday Prices
-- [ ] Largest Trades
-- [ ] Open / Close Price
+- [x] Historical Prices
+- [x] Intraday Prices
+- [x] Largest Trades
 - [x] OHLC
 - [ ] Previous Day Price
-- [ ] Price Only
-- [ ] Quote
-- [ ] Real-time Quote — Use quote endpoint.
+- [x] Price Only
+- [x] Quote
 - [ ] Volume by Venue
 
 ### Stock Profiles
 
-- [ ] Company
+- [x] Company
 - [ ] Insider Roster
 - [ ] Insider Summary
 - [ ] Insider Transactions
-- [ ] Logo
+- [x] Logo
 - [ ] Peer Groups
 
 ### Stock Fundamentals
@@ -121,8 +117,8 @@ you want a particular API to be developed next, please open an issue.
 - [ ] Estimates
 - [ ] Fund Ownership
 - [ ] Institutional Ownership
-- [ ] Key Stats
-- [ ] Price Target
+- [x] Key Stats
+- [x] Price Target
 - [ ] Technical Indicators
 
 ### Corporate Actions
@@ -150,7 +146,7 @@ you want a particular API to be developed next, please open an issue.
 
 ### News
 
-- [ ] News
+- [x] News
 - [ ] Streaming News
 - [ ] Historical News
 
