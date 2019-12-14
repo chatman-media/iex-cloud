@@ -42,11 +42,11 @@ IEX_API_TOKEN='pk_XXXX'
 IEX_API_SECRET_TOKEN='sk_XXXX'
 ```
 
-Create a client and call it methods:
+Call any methods:
 
 ```ts
-const client = new IEXCloudClient();
-console.log(client.metadata());
+import { metadata } from 'iex-ts-client';
+console.log(metadata());
 ```
 
 ## Implementation Status
