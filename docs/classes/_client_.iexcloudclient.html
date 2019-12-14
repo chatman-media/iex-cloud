@@ -108,12 +108,15 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#bonusissue" class="tsd-kind-icon">bonusIssue</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#company" class="tsd-kind-icon">company</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#datapoints" class="tsd-kind-icon">dataPoints</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#distribution" class="tsd-kind-icon">distribution</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#dividends" class="tsd-kind-icon">dividends</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#historicalprices" class="tsd-kind-icon">historicalPrices</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#intradayprices" class="tsd-kind-icon">intradayPrices</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#largesttrades" class="tsd-kind-icon">largestTrades</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#logo" class="tsd-kind-icon">logo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#messagebudget" class="tsd-kind-icon">messageBudget</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#metadata" class="tsd-kind-icon">metadata</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#news" class="tsd-kind-icon">news</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#ohlc" class="tsd-kind-icon">ohlc</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#price" class="tsd-kind-icon">price</a></li>
@@ -127,6 +130,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#spinoff" class="tsd-kind-icon">spinoff</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#splits" class="tsd-kind-icon">splits</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#stats" class="tsd-kind-icon">stats</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#timeseries" class="tsd-kind-icon">timeSeries</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_client_.iexcloudclient.html#timeseriesbyid" class="tsd-kind-icon">timeSeriesById</a></li>
 							</ul>
 						</section>
 					</div>
@@ -144,7 +149,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:32</li>
+									<li>Defined in client.ts:36</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -166,7 +171,7 @@
 					<div class="tsd-signature tsd-kind-icon">request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in client.ts:32</li>
+							<li>Defined in client.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -174,7 +179,7 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
 								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-property tsd-is-not-exported">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>endpoint<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>endpoint<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secret<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span>, method<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
@@ -182,6 +187,15 @@
 										<ul class="tsd-parameters">
 											<li>
 												<h5>endpoint: <span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> secret: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> method: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> data: <span class="tsd-signature-type">any</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -204,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:124</li>
+									<li>Defined in client.ts:197</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -247,7 +261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:71</li>
+									<li>Defined in client.ts:144</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -261,6 +275,41 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="datapoints" class="tsd-anchor"></a>
+					<h3>data<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">data<wbr>Points<span class="tsd-signature-symbol">(</span>symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_datapoint_.datapoint.html" class="tsd-signature-type">DataPoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in client.ts:107</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Data Points</p>
+								</div><p>Data points are available per symbol and return individual plain text values. Retrieving individual data points is useful for Excel and Google Sheet users, and applications where a single, lightweight value is needed. We also provide update times for some endpoints which allow you to call an endpoint only once it has new data.</p>
+								</div><div class="tsd-comment tsd-typography tsd-comment-text">
+								<p>Data points are available per symbol and return individual plain text values. Retrieving individual data points is useful for Excel and Google Sheet users, and applications where a single, lightweight value is needed. We also provide update times for some endpoints which allow you to call an endpoint only once it has new data.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>symbol: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> key: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_datapoint_.datapoint.html" class="tsd-signature-type">DataPoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="distribution" class="tsd-anchor"></a>
 					<h3>distribution</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -270,7 +319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:135</li>
+									<li>Defined in client.ts:208</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -312,7 +361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:155</li>
+									<li>Defined in client.ts:228</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -371,7 +420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:83</li>
+									<li>Defined in client.ts:156</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -403,7 +452,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:93</li>
+									<li>Defined in client.ts:166</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -429,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:100</li>
+									<li>Defined in client.ts:173</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -452,7 +501,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:75</li>
+									<li>Defined in client.ts:148</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -466,6 +515,66 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="messagebudget" class="tsd-anchor"></a>
+					<h3>message<wbr>Budget</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">message<wbr>Budget<span class="tsd-signature-symbol">(</span>totalMessages<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in client.ts:119</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p><a href="https://iexcloud.io/docs/api/#message-budget">Message Budget</a></p>
+									</div><p>Used to set an upper limit, “message budget”, on pay as you go messages where you want to
+									make sure not to go above a certain amount. Set the total messages you wish to consume
+									for the month, and once that limit is reached, all API calls will stop until the limit
+								is removed or increased.</p>
+								</div><div class="tsd-comment tsd-typography tsd-comment-text">
+								<p>Used to set an upper limit, “message budget”, on pay as you go messages where you want to
+									make sure not to go above a certain amount. Set the total messages you wish to consume
+									for the month, and once that limit is reached, all API calls will stop until the limit
+								is removed or increased.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>totalMessages: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="metadata" class="tsd-anchor"></a>
+					<h3>metadata</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">metadata<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_metadata_.metadata.html" class="tsd-signature-type">Metadata</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in client.ts:128</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p><a href="https://iexcloud.io/docs/api/#metadata">Metadata</a></p>
+								</div><p>Used to retrieve account details such as current tier, payment status, message quote usage, etc.</p>
+								</div><div class="tsd-comment tsd-typography tsd-comment-text">
+								<p>Used to retrieve account details such as current tier, payment status, message quote usage, etc.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_metadata_.metadata.html" class="tsd-signature-type">Metadata</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="news" class="tsd-anchor"></a>
 					<h3>news</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -475,7 +584,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:79</li>
+									<li>Defined in client.ts:152</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -501,7 +610,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:67</li>
+									<li>Defined in client.ts:140</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -524,7 +633,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:59</li>
+									<li>Defined in client.ts:132</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -547,7 +656,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:108</li>
+									<li>Defined in client.ts:181</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -570,7 +679,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:63</li>
+									<li>Defined in client.ts:136</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -593,7 +702,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:168</li>
+									<li>Defined in client.ts:241</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -640,7 +749,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:181</li>
+									<li>Defined in client.ts:254</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -687,7 +796,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:194</li>
+									<li>Defined in client.ts:267</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -734,7 +843,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:207</li>
+									<li>Defined in client.ts:280</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -781,7 +890,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:223</li>
+									<li>Defined in client.ts:296</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -828,7 +937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:236</li>
+									<li>Defined in client.ts:309</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -875,7 +984,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:249</li>
+									<li>Defined in client.ts:322</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -922,7 +1031,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in client.ts:104</li>
+									<li>Defined in client.ts:177</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -935,6 +1044,80 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_stat_.stat.html" class="tsd-signature-type">Stat</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="timeseries" class="tsd-anchor"></a>
+					<h3>time<wbr>Series</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">time<wbr>Series<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_timeseries_.timeseries.html" class="tsd-signature-type">TimeSeries</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in client.ts:86</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Time Series</p>
+									</div><p>Time series is the most common type of data available, and consists of a
+									collection of data points over a period of time. Time series data is
+									indexed by a single date field, and can be retrieved by any portion of time.
+									To use this endpoint, you’ll first make a free call to get an inventory
+								of available time series data.</p>
+								</div><div class="tsd-comment tsd-typography tsd-comment-text">
+								<p>Time series is the most common type of data available, and consists of a
+									collection of data points over a period of time. Time series data is
+									indexed by a single date field, and can be retrieved by any portion of time.
+									To use this endpoint, you’ll first make a free call to get an inventory
+								of available time series data.</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_timeseries_.timeseries.html" class="tsd-signature-type">TimeSeries</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="timeseriesbyid" class="tsd-anchor"></a>
+					<h3>time<wbr>Series<wbr>ById</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">time<wbr>Series<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, subkey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_timeseries_.timeseriesbyid.html" class="tsd-signature-type">TimeSeriesById</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in client.ts:97</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Time Series by Id</p>
+							</div></div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>ID used to identify a time series dataset.</p>
+									</div>
+								</li>
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>Key used to identify data within a dataset. A common example is a symbol such as AAPL.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> subkey: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>The optional subkey can used to further refine data for a particular key if available.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_types_timeseries_.timeseriesbyid.html" class="tsd-signature-type">TimeSeriesById</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -962,6 +1145,9 @@
 								<a href="_client_.iexcloudclient.html#company" class="tsd-kind-icon">company</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_client_.iexcloudclient.html#datapoints" class="tsd-kind-icon">data<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_client_.iexcloudclient.html#distribution" class="tsd-kind-icon">distribution</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -978,6 +1164,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_client_.iexcloudclient.html#logo" class="tsd-kind-icon">logo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_client_.iexcloudclient.html#messagebudget" class="tsd-kind-icon">message<wbr>Budget</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_client_.iexcloudclient.html#metadata" class="tsd-kind-icon">metadata</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_client_.iexcloudclient.html#news" class="tsd-kind-icon">news</a>
@@ -1017,6 +1209,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_client_.iexcloudclient.html#stats" class="tsd-kind-icon">stats</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_client_.iexcloudclient.html#timeseries" class="tsd-kind-icon">time<wbr>Series</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_client_.iexcloudclient.html#timeseriesbyid" class="tsd-kind-icon">time<wbr>Series<wbr>ById</a>
 							</li>
 						</ul>
 					</li>
