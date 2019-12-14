@@ -5,10 +5,6 @@
 [![Build Status](https://travis-ci.org/zishe/iex-ts-client.svg)](https://travis-ci.org/zishe/iex-ts-client)
 [![Dependency Status](https://david-dm.org/zishe/iex-ts-client.svg)](https://david-dm.org/zishe/iex-ts-client)
 [![devDependencies Status](https://david-dm.org/zishe/iex-ts-client/dev-status.svg)](https://david-dm.org/zishe/iex-ts-client?type=dev)
-
-[statusUrl]: https://github.com/zishe/iex-ts-client/pulse
-[statusImage]: https://img.shields.io/github/last-commit/zishe/iex-ts-client.svg
-
 [![License Badge][license badge]][LICENSE]
 
 A typescript client for the [IEX Cloud API](https://iexcloud.io/docs/api/).
@@ -269,3 +265,5 @@ See [CONTRIBUTING](CONTRIBUTING.md).
 [iexcloud]: https://github.com/zishe/iex-ts-client
 [LICENSE]: https://github.com/zishe/iex-ts-client/blob/master/LICENSE
 [license badge]: https://img.shields.io/badge/license-MIT-blue.svg
+[statusUrl]: https://github.com/zishe/iex-ts-client/pulse
+[statusImage]: https://img.shields.io/github/last-commit/zishe/iex-ts-client.svg
