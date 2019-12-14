@@ -69,13 +69,13 @@ you want a particular API to be developed next, please open an issue.
 
 - [x] Message Budget
 - [x] Metadata
-- [ ] Pay as you go
+- [x] Pay as you go
 - [ ] Signed Requests
-- [ ] Usage
+- [x] Usage
 
 ### API System Metadata
 
-- [ ] Status
+- [x] Status
 
 ### Stock Prices
 

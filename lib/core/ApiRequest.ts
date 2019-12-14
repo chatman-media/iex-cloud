@@ -23,7 +23,7 @@ export const ApiRequest = async (
     // throw new Error('IEX_API_TOKEN not found'))
 
     const secretToken = process.env.IEX_API_SECRET_TOKEN;
-    const version = process.env.IEX_API_VERSION || 'beta';
+    const version = process.env.IEX_API_VERSION || 'v1';
     const apiEnv = process.env.IEX_API_ENV || 'cloud';
 
     const baseUrl = `https://${apiEnv}.iexapis.com/${version}/`;
