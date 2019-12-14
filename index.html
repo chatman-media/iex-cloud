@@ -1,0 +1,602 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>iex-ts-client</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<ul class="results-priority" style="display:none">
+					</ul>
+					<a href="index.html" class="title">iex-ts-client</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+			</ul>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-3 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html" style="display:none"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-7 offset-3 col-content">
+			<h1> iex-ts-client</h1>
+			<div class="tsd-panel tsd-typography">
+				<a href="#iex-cloud-api-typescript-client" id="iex-cloud-api-typescript-client" style="color: inherit; text-decoration: none;">
+					<h1>IEX Cloud API TypeScript Client</h1>
+				</a>
+				<p><a href="https://www.npmjs.com/package/iex-ts-client"><img src="https://img.shields.io/npm/v/iex-ts-client.svg?style=flat" alt="NPM version"></a>
+					<a href="https://github.com/zishe/iex-ts-client/pulse"><img src="https://img.shields.io/github/last-commit/zishe/iex-ts-client.svg" alt="Maintenance Status"></a>
+					<a href="https://travis-ci.org/zishe/iex-ts-client"><img src="https://travis-ci.org/zishe/iex-ts-client.svg" alt="Build Status"></a>
+					<a href="https://david-dm.org/zishe/iex-ts-client"><img src="https://david-dm.org/zishe/iex-ts-client.svg" alt="Dependency Status"></a>
+					<a href="https://david-dm.org/zishe/iex-ts-client?type=dev"><img src="https://david-dm.org/zishe/iex-ts-client/dev-status.svg" alt="devDependencies Status"></a>
+				<a href="https://github.com/zishe/iex-ts-client/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License Badge"></a></p>
+				<p>A typescript client for the <a href="https://iexcloud.io/docs/api/">IEX Cloud API</a>.</p>
+				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
+					<h1>Table of Contents</h1>
+				</a>
+				<ul>
+					<li><a href="#installation">Installation</a></li>
+					<li><a href="#usage">Usage</a><ul>
+							<li><a href="#get-an-api-token">Get an API Token</a></li>
+							<li><a href="#configure">Configure</a></li>
+						</ul>
+					</li>
+					<li><a href="#implementation-status">Implementation</a></li>
+					<li><a href="#contributing">Contributing</a></li>
+					<li><a href="#copyright-and-license">Copyright and License</a></li>
+				</ul>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<p>Install package</p>
+				<pre><code class="language-sh">yarn add iex-ts-client</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<a href="#get-an-api-token" id="get-an-api-token" style="color: inherit; text-decoration: none;">
+					<h3>Get an API Token</h3>
+				</a>
+				<p>Create an account on <a href="https://iexcloud.io">IEX Cloud</a> and get a publishable token from the IEX cloud console. You should use a sandbox token and endpoint for testing.</p>
+				<a href="#configure" id="configure" style="color: inherit; text-decoration: none;">
+					<h3>Configure</h3>
+				</a>
+				<p>Put API key to your environment file (<code>.env</code>):</p>
+				<pre><code class="language-sh">IEX_API_TOKEN=<span class="hljs-string">'pk_XXXX'</span>
+IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span></code></pre>
+				<p>Create a client and call it methods:</p>
+				<pre><code class="language-ts"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> IEXCloudClient();
+<span class="hljs-built_in">console</span>.log(client.metadata());</code></pre>
+				<a href="#implementation-status" id="implementation-status" style="color: inherit; text-decoration: none;">
+					<h2>Implementation Status</h2>
+				</a>
+				<p>Below is a list of the APIs that have and have not been implemented. If
+				you want a particular API to be developed next, please open an issue.</p>
+				<a href="#introduction" id="introduction" style="color: inherit; text-decoration: none;">
+					<h3>Introduction</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Batch Requests</li>
+				</ul>
+				<a href="#guides" id="guides" style="color: inherit; text-decoration: none;">
+					<h3>Guides</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Time Series</li>
+					<li><input disabled="" type="checkbox"> Calendar</li>
+					<li><input checked="" disabled="" type="checkbox"> Data Points</li>
+				</ul>
+				<a href="#account" id="account" style="color: inherit; text-decoration: none;">
+					<h3>Account</h3>
+				</a>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> Message Budget</li>
+					<li><input checked="" disabled="" type="checkbox"> Metadata</li>
+					<li><input disabled="" type="checkbox"> Pay as you go</li>
+					<li><input disabled="" type="checkbox"> Signed Requests</li>
+					<li><input disabled="" type="checkbox"> Usage</li>
+				</ul>
+				<a href="#api-system-metadata" id="api-system-metadata" style="color: inherit; text-decoration: none;">
+					<h3>API System Metadata</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Status</li>
+				</ul>
+				<a href="#stock-prices" id="stock-prices" style="color: inherit; text-decoration: none;">
+					<h3>Stock Prices</h3>
+				</a>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> Book</li>
+					<li><input disabled="" type="checkbox"> Delayed Quote</li>
+					<li><input checked="" disabled="" type="checkbox"> Historical Prices</li>
+					<li><input checked="" disabled="" type="checkbox"> Intraday Prices</li>
+					<li><input checked="" disabled="" type="checkbox"> Largest Trades</li>
+					<li><input checked="" disabled="" type="checkbox"> OHLC</li>
+					<li><input disabled="" type="checkbox"> Previous Day Price</li>
+					<li><input checked="" disabled="" type="checkbox"> Price Only</li>
+					<li><input checked="" disabled="" type="checkbox"> Quote</li>
+					<li><input disabled="" type="checkbox"> Volume by Venue</li>
+				</ul>
+				<a href="#stock-profiles" id="stock-profiles" style="color: inherit; text-decoration: none;">
+					<h3>Stock Profiles</h3>
+				</a>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> Company</li>
+					<li><input disabled="" type="checkbox"> Insider Roster</li>
+					<li><input disabled="" type="checkbox"> Insider Summary</li>
+					<li><input disabled="" type="checkbox"> Insider Transactions</li>
+					<li><input checked="" disabled="" type="checkbox"> Logo</li>
+					<li><input disabled="" type="checkbox"> Peer Groups</li>
+				</ul>
+				<a href="#stock-fundamentals" id="stock-fundamentals" style="color: inherit; text-decoration: none;">
+					<h3>Stock Fundamentals</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Balance Sheet</li>
+					<li><input disabled="" type="checkbox"> Cash Flow</li>
+					<li><input disabled="" type="checkbox"> Dividends (Basic)</li>
+					<li><input disabled="" type="checkbox"> Earnings</li>
+					<li><input disabled="" type="checkbox"> Financials</li>
+					<li><input disabled="" type="checkbox"> Financials As Reported</li>
+					<li><input disabled="" type="checkbox"> Income Statement</li>
+					<li><input disabled="" type="checkbox"> SEC Filings — Use the Financials As Reported endpoint for raw SEC filings data.</li>
+					<li><input disabled="" type="checkbox"> Splits (Basic)</li>
+				</ul>
+				<a href="#stock-research" id="stock-research" style="color: inherit; text-decoration: none;">
+					<h3>Stock Research</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Advanced Stats</li>
+					<li><input disabled="" type="checkbox"> Analyst Recommendations</li>
+					<li><input disabled="" type="checkbox"> Estimates</li>
+					<li><input disabled="" type="checkbox"> Fund Ownership</li>
+					<li><input disabled="" type="checkbox"> Institutional Ownership</li>
+					<li><input checked="" disabled="" type="checkbox"> Key Stats</li>
+					<li><input checked="" disabled="" type="checkbox"> Price Target</li>
+					<li><input disabled="" type="checkbox"> Technical Indicators</li>
+				</ul>
+				<a href="#corporate-actions" id="corporate-actions" style="color: inherit; text-decoration: none;">
+					<h3>Corporate Actions</h3>
+				</a>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> Bonus Issue</li>
+					<li><input checked="" disabled="" type="checkbox"> Distribution</li>
+					<li><input checked="" disabled="" type="checkbox"> Dividends</li>
+					<li><input checked="" disabled="" type="checkbox"> Return of Capital</li>
+					<li><input checked="" disabled="" type="checkbox"> Rights Issue</li>
+					<li><input checked="" disabled="" type="checkbox"> Right to Purchase</li>
+					<li><input checked="" disabled="" type="checkbox"> Security Reclassification</li>
+					<li><input checked="" disabled="" type="checkbox"> Security Swap</li>
+					<li><input checked="" disabled="" type="checkbox"> Spinoff</li>
+					<li><input checked="" disabled="" type="checkbox"> Splits</li>
+				</ul>
+				<a href="#market-info" id="market-info" style="color: inherit; text-decoration: none;">
+					<h3>Market Info</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Collections</li>
+					<li><input disabled="" type="checkbox"> Earnings Today</li>
+					<li><input disabled="" type="checkbox"> IPO Calendar</li>
+					<li><input disabled="" type="checkbox"> List</li>
+					<li><input disabled="" type="checkbox"> Market Volume (U.S.)</li>
+					<li><input disabled="" type="checkbox"> Sector Performance</li>
+					<li><input disabled="" type="checkbox"> Upcoming Events</li>
+				</ul>
+				<a href="#news" id="news" style="color: inherit; text-decoration: none;">
+					<h3>News</h3>
+				</a>
+				<ul>
+					<li><input checked="" disabled="" type="checkbox"> News</li>
+					<li><input disabled="" type="checkbox"> Streaming News</li>
+					<li><input disabled="" type="checkbox"> Historical News</li>
+				</ul>
+				<a href="#cryptocurrency" id="cryptocurrency" style="color: inherit; text-decoration: none;">
+					<h3>Cryptocurrency</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Cryptocurrency Book</li>
+					<li><input disabled="" type="checkbox"> Cryptocurrency Events</li>
+					<li><input disabled="" type="checkbox"> Cryptocurrency Price</li>
+					<li><input disabled="" type="checkbox"> Cryptocurrency Quote</li>
+				</ul>
+				<a href="#forex--currencies" id="forex--currencies" style="color: inherit; text-decoration: none;">
+					<h3>Forex / Currencies</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Real-time Streaming</li>
+					<li><input disabled="" type="checkbox"> Latest Currency Rates</li>
+					<li><input disabled="" type="checkbox"> Currency Conversion</li>
+					<li><input disabled="" type="checkbox"> Historical Daily</li>
+				</ul>
+				<a href="#options" id="options" style="color: inherit; text-decoration: none;">
+					<h3>Options</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> End of Day Options</li>
+				</ul>
+				<a href="#social-sentiment" id="social-sentiment" style="color: inherit; text-decoration: none;">
+					<h3>Social Sentiment</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Social Sentiment</li>
+				</ul>
+				<a href="#ceo-compensation" id="ceo-compensation" style="color: inherit; text-decoration: none;">
+					<h3>CEO Compensation</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> CEO Compensation</li>
+				</ul>
+				<a href="#treasuries" id="treasuries" style="color: inherit; text-decoration: none;">
+					<h3>Treasuries</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Daily Treasury Rates</li>
+				</ul>
+				<a href="#commodities" id="commodities" style="color: inherit; text-decoration: none;">
+					<h3>Commodities</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Oil Prices</li>
+					<li><input disabled="" type="checkbox"> Natural Gas Price</li>
+					<li><input disabled="" type="checkbox"> Heating Oil Prices</li>
+					<li><input disabled="" type="checkbox"> Jet Fuel Prices</li>
+					<li><input disabled="" type="checkbox"> Diesel Price</li>
+					<li><input disabled="" type="checkbox"> Gas Prices</li>
+					<li><input disabled="" type="checkbox"> Propane Prices</li>
+				</ul>
+				<a href="#economic-data" id="economic-data" style="color: inherit; text-decoration: none;">
+					<h3>Economic Data</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> CD Rates</li>
+					<li><input disabled="" type="checkbox"> Consumer Price Index</li>
+					<li><input disabled="" type="checkbox"> Credit Card Interest Rate</li>
+					<li><input disabled="" type="checkbox"> Federal Fund Rates</li>
+					<li><input disabled="" type="checkbox"> Real GDP</li>
+					<li><input disabled="" type="checkbox"> Institutional Money Funds</li>
+					<li><input disabled="" type="checkbox"> Initial Claims</li>
+					<li><input disabled="" type="checkbox"> Industrial Production Index</li>
+					<li><input disabled="" type="checkbox"> Mortgage Rates</li>
+					<li><input disabled="" type="checkbox"> Total Housing Starts</li>
+					<li><input disabled="" type="checkbox"> Total Payrolls</li>
+					<li><input disabled="" type="checkbox"> Total Vehicle Sales</li>
+					<li><input disabled="" type="checkbox"> Retail Money Funds</li>
+					<li><input disabled="" type="checkbox"> Unemployment Rates</li>
+					<li><input disabled="" type="checkbox"> US Recession Probabilities</li>
+				</ul>
+				<a href="#reference-data" id="reference-data" style="color: inherit; text-decoration: none;">
+					<h3>Reference Data</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> Search</li>
+					<li><input disabled="" type="checkbox"> Cryptocurrency Symbols</li>
+					<li><input disabled="" type="checkbox"> FX Symbols</li>
+					<li><input disabled="" type="checkbox"> IEX Symbols</li>
+					<li><input disabled="" type="checkbox"> International Symbols</li>
+					<li><input disabled="" type="checkbox"> International Exchanges</li>
+					<li><input disabled="" type="checkbox"> ISIN Mapping</li>
+					<li><input disabled="" type="checkbox"> Mutual Fund Symbols</li>
+					<li><input disabled="" type="checkbox"> Options Symbols</li>
+					<li><input disabled="" type="checkbox"> OTC Symbols</li>
+					<li><input disabled="" type="checkbox"> Sectors</li>
+					<li><input disabled="" type="checkbox"> Symbols</li>
+					<li><input disabled="" type="checkbox"> Tags</li>
+					<li><input disabled="" type="checkbox"> U.S. Exchanges</li>
+					<li><input disabled="" type="checkbox"> U.S. Holidays and Trading Days</li>
+				</ul>
+				<a href="#investors-exchange-data" id="investors-exchange-data" style="color: inherit; text-decoration: none;">
+					<h3>Investors Exchange Data</h3>
+				</a>
+				<ul>
+					<li><input disabled="" type="checkbox"> DEEP</li>
+					<li><input disabled="" type="checkbox"> DEEP Auction</li>
+					<li><input disabled="" type="checkbox"> DEEP Book</li>
+					<li><input disabled="" type="checkbox"> DEEP Operational Halt Status</li>
+					<li><input disabled="" type="checkbox"> DEEP Official Price</li>
+					<li><input disabled="" type="checkbox"> DEEP Security Event</li>
+					<li><input disabled="" type="checkbox"> DEEP Short Sale Price Test Status</li>
+					<li><input disabled="" type="checkbox"> DEEP System Event</li>
+					<li><input disabled="" type="checkbox"> DEEP Trades</li>
+					<li><input disabled="" type="checkbox"> DEEP Trade Break</li>
+					<li><input disabled="" type="checkbox"> DEEP Trading Status</li>
+					<li><input disabled="" type="checkbox"> Last</li>
+					<li><input disabled="" type="checkbox"> Listed Regulation SHO Threshold Securities List</li>
+					<li><input disabled="" type="checkbox"> Stats Historical Daily</li>
+					<li><input disabled="" type="checkbox"> Stats Historical Summary</li>
+					<li><input disabled="" type="checkbox"> Stats Intraday</li>
+					<li><input disabled="" type="checkbox"> Stats Recent</li>
+					<li><input disabled="" type="checkbox"> Stats Records</li>
+					<li><input disabled="" type="checkbox"> TOPS</li>
+				</ul>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<p>See <a href=".github/CONTRIBUTING.md">CONTRIBUTING</a>.</p>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p><a href="https://github.com/zishe/iex-ts-client">iexcloud</a> is released under the MIT license. Please see the <a href="https://github.com/zishe/iex-ts-client/blob/master/LICENSE">LICENSE</a> file for more information.</p>
+			</div>
+			<!--{&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;exclude&quot;:[&quot;**/*.spec.ts&quot;],&quot;mode&quot;:0,&quot;out&quot;:&quot;build/docs&quot;}-->
+		</div>
+		<div class="col-2 col-menu secondary-menu">
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/bidorask.html" class="tsd-kind-icon">Bid<wbr>OrAsk</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/bonusissue.html" class="tsd-kind-icon">Bonus<wbr>Issue</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/book.html" class="tsd-kind-icon">Book</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/company.html" class="tsd-kind-icon">Company</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/datapoint.html" class="tsd-kind-icon">Data<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/distribution.html" class="tsd-kind-icon">Distribution</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/dividend.html" class="tsd-kind-icon">Dividend</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/historicalprice.html" class="tsd-kind-icon">Historical<wbr>Price</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/historicalpriceparams.html" class="tsd-kind-icon">Historical<wbr>Price<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/intradayprice.html" class="tsd-kind-icon">Intraday<wbr>Price</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/intradaypriceparams.html" class="tsd-kind-icon">Intraday<wbr>Price<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/largesttrade.html" class="tsd-kind-icon">Largest<wbr>Trade</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/logo.html" class="tsd-kind-icon">Logo</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/metadata.html" class="tsd-kind-icon">Metadata</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/news.html" class="tsd-kind-icon">News</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/ohlc.html" class="tsd-kind-icon">OHLC</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/pricetarget.html" class="tsd-kind-icon">Price<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/quote.html" class="tsd-kind-icon">Quote</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/quoteqsparams.html" class="tsd-kind-icon">QuoteQSParams</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/requestconfig.html" class="tsd-kind-icon">Request<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/returnofcapital.html" class="tsd-kind-icon">Return<wbr>OfCapital</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/rightsissue.html" class="tsd-kind-icon">Rights<wbr>Issue</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/rightstopurchase.html" class="tsd-kind-icon">Rights<wbr>ToPurchase</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/securityreclassification.html" class="tsd-kind-icon">Security<wbr>Reclassification</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/securityswap.html" class="tsd-kind-icon">Security<wbr>Swap</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/spinoff.html" class="tsd-kind-icon">Spinoff</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/split.html" class="tsd-kind-icon">Split</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/stat.html" class="tsd-kind-icon">Stat</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/systemevent.html" class="tsd-kind-icon">System<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/timeseries.html" class="tsd-kind-icon">Time<wbr>Series</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/timeseriesbyid.html" class="tsd-kind-icon">Time<wbr>Series<wbr>ById</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/timeseriesqsparams.html" class="tsd-kind-icon">Time<wbr>SeriesQSParams</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/trade.html" class="tsd-kind-icon">Trade</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#dividendfrequency" class="tsd-kind-icon">Dividend<wbr>Frequency</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported root">
+						<a href="globals.html#latestsource" class="tsd-kind-icon">Latest<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-is-not-exported root">
+						<a href="globals.html#latesttime" class="tsd-kind-icon">Latest<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#marker" class="tsd-kind-icon">Marker</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#paymenttype" class="tsd-kind-icon">Payment<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#range" class="tsd-kind-icon">Range</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#securitytype" class="tsd-kind-icon">Security<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#splittype" class="tsd-kind-icon">Split<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#timeseriesrange" class="tsd-kind-icon">Time<wbr>Series<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#version" class="tsd-kind-icon">Version</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#apirequest" class="tsd-kind-icon">Api<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#bonusissue" class="tsd-kind-icon">bonus<wbr>Issue</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#company" class="tsd-kind-icon">company</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#datapoints" class="tsd-kind-icon">data<wbr>Points</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#distribution" class="tsd-kind-icon">distribution</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#dividends" class="tsd-kind-icon">dividends</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#historicalprices" class="tsd-kind-icon">historical<wbr>Prices</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#intradayprices" class="tsd-kind-icon">intraday<wbr>Prices</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#largesttrades" class="tsd-kind-icon">largest<wbr>Trades</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#logo" class="tsd-kind-icon">logo</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#messagebudget" class="tsd-kind-icon">message<wbr>Budget</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#metadata" class="tsd-kind-icon">metadata</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#news" class="tsd-kind-icon">news</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#ohlc" class="tsd-kind-icon">ohlc</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#paramstoquery" class="tsd-kind-icon">params<wbr>ToQuery</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#priceonly" class="tsd-kind-icon">price<wbr>Only</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#pricetarget" class="tsd-kind-icon">price<wbr>Target</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#quote" class="tsd-kind-icon">quote</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#returnofcapital" class="tsd-kind-icon">return<wbr>OfCapital</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#rightsissue" class="tsd-kind-icon">rights<wbr>Issue</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#rightstopurchase" class="tsd-kind-icon">rights<wbr>ToPurchase</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#securityreclassification" class="tsd-kind-icon">security<wbr>Reclassification</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#securityswap" class="tsd-kind-icon">security<wbr>Swap</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#spinoff" class="tsd-kind-icon">spinoff</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#splits" class="tsd-kind-icon">splits</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#stats" class="tsd-kind-icon">stats</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#timeseries" class="tsd-kind-icon">time<wbr>Series</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#timeseriesbyid" class="tsd-kind-icon">time<wbr>Series<wbr>ById</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
