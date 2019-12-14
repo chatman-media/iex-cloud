@@ -1,3 +1,4 @@
+export * from './BonusIssue';
 export * from './Distribution';
 export * from './Dividend';
 export * from './ReturnOfCapital';
@@ -5,6 +6,5 @@ export * from './RightsIssue';
 export * from './RightsToPurchase';
 export * from './SecurityReclassification';
 export * from './SecuritySwap';
-export * from './BonusIssue';
 export * from './Spinoff';
 export * from './Split';
