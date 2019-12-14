@@ -114,9 +114,10 @@
 				<p>Put API key to your environment file (<code>.env</code>):</p>
 				<pre><code class="language-sh">IEX_API_TOKEN=<span class="hljs-string">'pk_XXXX'</span>
 IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span></code></pre>
-				<p>Create a client and call it methods:</p>
-				<pre><code class="language-ts"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> IEXCloudClient();
-<span class="hljs-built_in">console</span>.log(client.metadata());</code></pre>
+				<p>Call any methods:</p>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { metadata } <span class="hljs-keyword">from</span> <span class="hljs-string">'iex-ts-client'</span>;
+
+metadata().then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result));</code></pre>
 				<a href="#implementation-status" id="implementation-status" style="color: inherit; text-decoration: none;">
 					<h2>Implementation Status</h2>
 				</a>
@@ -358,14 +359,19 @@ IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span></code></pre>
 					<li><input disabled="" type="checkbox"> Stats Records</li>
 					<li><input disabled="" type="checkbox"> TOPS</li>
 				</ul>
+				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
+					<h2>Documentation</h2>
+				</a>
+				<p>See documentation <a href="https://zishe.github.io/iex-ts-client/">here</a></p>
 				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
 					<h2>Contributing</h2>
 				</a>
 				<p>See <a href=".github/CONTRIBUTING.md">CONTRIBUTING</a>.</p>
-				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
-					<h2>License</h2>
+				<a href="#copyright-and-license" id="copyright-and-license" style="color: inherit; text-decoration: none;">
+					<h2>Copyright and License</h2>
 				</a>
-				<p><a href="https://github.com/zishe/iex-ts-client">iexcloud</a> is released under the MIT license. Please see the <a href="https://github.com/zishe/iex-ts-client/blob/master/LICENSE">LICENSE</a> file for more information.</p>
+				<p><a href="LICENSE.md">MIT License</a> Copyright (c) 2019 <a href="https://github.com/zishe/">Alexander Kireev</a> and <a href="CHANGELOG.md">Contributors</a>.</p>
+				<p>Data provided for free by <a href="https://iexcloud.io">IEX Cloud</a>, see <a href="https://iexcloud.io/terms/">terms</a>.</p>
 			</div>
 			<!--{&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;exclude&quot;:[&quot;**/*.spec.ts&quot;],&quot;mode&quot;:0,&quot;out&quot;:&quot;build/docs&quot;}-->
 		</div>
