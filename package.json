@@ -22,6 +22,7 @@
     "doc:html": "typedoc lib/ --theme ./node_modules/typedoc-neo-theme/bin/default --exclude **/*.spec.ts --target ES6 --mode file --out build/docs",
     "doc:json": "typedoc lib/ --theme ./node_modules/typedoc-neo-theme/bin/default --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
+    "test": "echo \"No test specified\"",
     "clean": "trash build",
     "version": "standard-version",
     "prepare-release": "run-s doc:html version doc:publish"
