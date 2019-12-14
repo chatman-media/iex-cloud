@@ -31,7 +31,7 @@ A typescript client for the [IEX Cloud API](https://iexcloud.io/docs/api/).
 Install package
 
 ```sh
-yarn add eix-ts-client
+yarn add iex-ts-client
 ```
 
 ## Usage

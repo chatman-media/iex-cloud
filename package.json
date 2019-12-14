@@ -1,7 +1,7 @@
 {
-  "name": "eix-ts-client",
+  "name": "iex-ts-client",
   "version": "0.0.1",
-  "description": "EIX Cloud ts client",
+  "description": "IEX Cloud ts client",
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
