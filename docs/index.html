@@ -184,23 +184,20 @@
 					<a href="https://github.com/zishe/iex-ts-client/pulse"><img src="https://img.shields.io/github/last-commit/zishe/iex-ts-client.svg" alt="Maintenance Status"></a>
 					<a href="https://travis-ci.org/zishe/iex-ts-client"><img src="https://travis-ci.org/zishe/iex-ts-client.svg" alt="Build Status"></a>
 					<a href="https://david-dm.org/zishe/iex-ts-client"><img src="https://david-dm.org/zishe/iex-ts-client.svg" alt="Dependency Status"></a>
-				<a href="https://david-dm.org/zishe/iex-ts-client?type=dev"><img src="https://david-dm.org/zishe/iex-ts-client/dev-status.svg" alt="devDependencies Status"></a></p>
-				<p><a href="https://github.com/zishe/iex-ts-client/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License Badge"></a></p>
+					<a href="https://david-dm.org/zishe/iex-ts-client?type=dev"><img src="https://david-dm.org/zishe/iex-ts-client/dev-status.svg" alt="devDependencies Status"></a>
+				<a href="https://github.com/zishe/iex-ts-client/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License Badge"></a></p>
 				<p>A typescript client for the <a href="https://iexcloud.io/docs/api/">IEX Cloud API</a>.</p>
 				<a href="#table-of-contents" id="table-of-contents" style="color: inherit; text-decoration: none;">
 					<h1>Table of Contents</h1>
 				</a>
 				<ul>
 					<li><a href="#installation">Installation</a></li>
-					<li><a href="#usage">Usage</a></li>
-					<li><a href="#configure">Configure</a></li>
-					<li><a href="#implementation-status">Implementation</a></li>
-					<li><a href="#errors">Errors</a><ul>
-							<li><a href="#symbolnotfound">SymbolNotFound</a></li>
-							<li><a href="#permissiondeniederror">PermissionDeniedError</a></li>
-							<li><a href="#clienterror">ClientError</a></li>
+					<li><a href="#usage">Usage</a><ul>
+							<li><a href="#get-an-api-token">Get an API Token</a></li>
+							<li><a href="#configure">Configure</a></li>
 						</ul>
 					</li>
+					<li><a href="#implementation-status">Implementation</a></li>
 					<li><a href="#contributing">Contributing</a></li>
 					<li><a href="#copyright-and-license">Copyright and License</a></li>
 				</ul>
@@ -264,30 +261,26 @@ IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span></code></pre>
 					<h3>Stock Prices</h3>
 				</a>
 				<ul>
-					<li><input disabled="" type="checkbox"> Book</li>
-					<li><input disabled="" type="checkbox"> Charts — Use historical and intraday price endpoints.</li>
+					<li><input checked="" disabled="" type="checkbox"> Book</li>
 					<li><input disabled="" type="checkbox"> Delayed Quote</li>
-					<li><input disabled="" type="checkbox"> Extended Hours Quote — Use quote endpoint.</li>
-					<li><input disabled="" type="checkbox"> Historical Prices</li>
-					<li><input disabled="" type="checkbox"> Intraday Prices</li>
-					<li><input disabled="" type="checkbox"> Largest Trades</li>
-					<li><input disabled="" type="checkbox"> Open / Close Price</li>
+					<li><input checked="" disabled="" type="checkbox"> Historical Prices</li>
+					<li><input checked="" disabled="" type="checkbox"> Intraday Prices</li>
+					<li><input checked="" disabled="" type="checkbox"> Largest Trades</li>
 					<li><input checked="" disabled="" type="checkbox"> OHLC</li>
 					<li><input disabled="" type="checkbox"> Previous Day Price</li>
-					<li><input disabled="" type="checkbox"> Price Only</li>
-					<li><input disabled="" type="checkbox"> Quote</li>
-					<li><input disabled="" type="checkbox"> Real-time Quote — Use quote endpoint.</li>
+					<li><input checked="" disabled="" type="checkbox"> Price Only</li>
+					<li><input checked="" disabled="" type="checkbox"> Quote</li>
 					<li><input disabled="" type="checkbox"> Volume by Venue</li>
 				</ul>
 				<a href="#stock-profiles" id="stock-profiles" style="color: inherit; text-decoration: none;">
 					<h3>Stock Profiles</h3>
 				</a>
 				<ul>
-					<li><input disabled="" type="checkbox"> Company</li>
+					<li><input checked="" disabled="" type="checkbox"> Company</li>
 					<li><input disabled="" type="checkbox"> Insider Roster</li>
 					<li><input disabled="" type="checkbox"> Insider Summary</li>
 					<li><input disabled="" type="checkbox"> Insider Transactions</li>
-					<li><input disabled="" type="checkbox"> Logo</li>
+					<li><input checked="" disabled="" type="checkbox"> Logo</li>
 					<li><input disabled="" type="checkbox"> Peer Groups</li>
 				</ul>
 				<a href="#stock-fundamentals" id="stock-fundamentals" style="color: inherit; text-decoration: none;">
@@ -313,8 +306,8 @@ IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span></code></pre>
 					<li><input disabled="" type="checkbox"> Estimates</li>
 					<li><input disabled="" type="checkbox"> Fund Ownership</li>
 					<li><input disabled="" type="checkbox"> Institutional Ownership</li>
-					<li><input disabled="" type="checkbox"> Key Stats</li>
-					<li><input disabled="" type="checkbox"> Price Target</li>
+					<li><input checked="" disabled="" type="checkbox"> Key Stats</li>
+					<li><input checked="" disabled="" type="checkbox"> Price Target</li>
 					<li><input disabled="" type="checkbox"> Technical Indicators</li>
 				</ul>
 				<a href="#corporate-actions" id="corporate-actions" style="color: inherit; text-decoration: none;">
@@ -348,7 +341,7 @@ IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span></code></pre>
 					<h3>News</h3>
 				</a>
 				<ul>
-					<li><input disabled="" type="checkbox"> News</li>
+					<li><input checked="" disabled="" type="checkbox"> News</li>
 					<li><input disabled="" type="checkbox"> Streaming News</li>
 					<li><input disabled="" type="checkbox"> Historical News</li>
 				</ul>
@@ -473,7 +466,7 @@ IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span></code></pre>
 				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
 					<h2>Contributing</h2>
 				</a>
-				<p>See <a href="CONTRIBUTING.md">CONTRIBUTING</a>.</p>
+				<p>See <a href=".github/CONTRIBUTING.md">CONTRIBUTING</a>.</p>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>

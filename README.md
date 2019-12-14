@@ -250,7 +250,7 @@ you want a particular API to be developed next, please open an issue.
 
 ## Contributing
 
-See [CONTRIBUTING](CONTRIBUTING.md).
+See [CONTRIBUTING](.github/CONTRIBUTING.md).
 
 ## License
 

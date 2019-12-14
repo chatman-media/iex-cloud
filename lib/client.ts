@@ -33,7 +33,12 @@ import { isString } from 'util';
 import { paramsToQuery } from './utils';
 
 export class IEXCloudClient {
-    private request: (endpoint: string, secret?: boolean, method?: string, data?: any) => Promise<any>;
+    private request: (
+        endpoint: string,
+        secret?: boolean,
+        method?: string,
+        data?: any,
+    ) => Promise<any>;
 
     public constructor(config: IEXCloudConfig = { sandbox: false, version: 'beta' }) {
         const apiToken = process.env.IEX_API_TOKEN;
@@ -43,24 +48,29 @@ export class IEXCloudClient {
         const { sandbox, version } = config;
         const baseUrl = `https://${sandbox ? 'sandbox' : 'cloud'}.iexapis.com/${version}/`;
 
-        this.request = async (endpoint: string, secret: boolean = false, method: string = 'GET', data: any = {}): Promise<any> => {
+        this.request = async (
+            endpoint: string,
+            secret: boolean = false,
+            method: string = 'GET',
+            data: any = {},
+        ): Promise<any> => {
             let url = `${baseUrl}${endpoint}`;
             console.log(secret, data);
-            
+
             if (!(method === 'POST' && secret)) {
                 url = `${url}${endpoint.includes('?') ? '&' : '?'}token=${
                     !secret ? apiToken : secretToken
-                }`
+                }`;
             }
             let response;
             try {
                 console.log(url);
-                if (method === 'GET'){
+                if (method === 'GET') {
                     response = await fetch(url);
                 } else {
                     let body: any = {};
-                    if (secret) body.token = secretToken
-                    if (data) body = {...body, ...data}
+                    if (secret) body.token = secretToken;
+                    if (data) body = { ...body, ...data };
                     console.log(body);
                     response = await fetch(url, { method, body });
                 }
@@ -111,9 +121,9 @@ export class IEXCloudClient {
     /**
      * [Message Budget](https://iexcloud.io/docs/api/#message-budget)
      *
-     * Used to set an upper limit, “message budget”, on pay as you go messages where you want to 
-     *   make sure not to go above a certain amount. Set the total messages you wish to consume 
-     *   for the month, and once that limit is reached, all API calls will stop until the limit 
+     * Used to set an upper limit, “message budget”, on pay as you go messages where you want to
+     *   make sure not to go above a certain amount. Set the total messages you wish to consume
+     *   for the month, and once that limit is reached, all API calls will stop until the limit
      *   is removed or increased.
      */
     public messageBudget(totalMessages: number): Promise<any> {
