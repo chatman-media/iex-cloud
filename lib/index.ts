@@ -4,4 +4,4 @@ import 'dotenv/config';
 export * from './endpoints';
 export * from './core';
 
-// status().then(x => console.log(x));
+// search(`UNG`).then(x => console.log(x));

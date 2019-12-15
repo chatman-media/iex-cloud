@@ -35,11 +35,12 @@ Create an account on [IEX Cloud](https://iexcloud.io) and get a publishable toke
 
 ### Configure
 
-Put API key to your environment file (`.env`):
+Put your API tokens (and version if differs from default `v1`) to your environment file (`.env`):
 
 ```sh
 IEX_API_TOKEN='pk_XXXX'
 IEX_API_SECRET_TOKEN='sk_XXXX'
+IEX_API_SECRET_VERSION='beta'
 ```
 
 Call any methods:
@@ -80,7 +81,7 @@ you want a particular API to be developed next, please open an issue.
 ### Stock Prices
 
 - [x] Book
-- [ ] Delayed Quote
+- [x] Delayed Quote
 - [x] Historical Prices
 - [x] Intraday Prices
 - [x] Largest Trades

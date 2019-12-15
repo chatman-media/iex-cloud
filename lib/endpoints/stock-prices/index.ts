@@ -5,3 +5,4 @@ export * from './LargestTrade';
 export * from './Ohlc';
 export * from './PriceOnly';
 export * from './Quote';
+export * from './DelayedQuote';
