@@ -111,9 +111,10 @@
 				<a href="#configure" id="configure" style="color: inherit; text-decoration: none;">
 					<h3>Configure</h3>
 				</a>
-				<p>Put API key to your environment file (<code>.env</code>):</p>
+				<p>Put your API tokens (and version if differs from default <code>v1</code>) to your environment file (<code>.env</code>):</p>
 				<pre><code class="language-sh">IEX_API_TOKEN=<span class="hljs-string">'pk_XXXX'</span>
-IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span></code></pre>
+IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span>
+IEX_API_SECRET_VERSION=<span class="hljs-string">'beta'</span></code></pre>
 				<p>Call any methods:</p>
 				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { metadata } <span class="hljs-keyword">from</span> <span class="hljs-string">'iex-ts-client'</span>;
 
@@ -158,7 +159,7 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 				</a>
 				<ul>
 					<li><input checked="" disabled="" type="checkbox"> Book</li>
-					<li><input disabled="" type="checkbox"> Delayed Quote</li>
+					<li><input checked="" disabled="" type="checkbox"> Delayed Quote</li>
 					<li><input checked="" disabled="" type="checkbox"> Historical Prices</li>
 					<li><input checked="" disabled="" type="checkbox"> Intraday Prices</li>
 					<li><input checked="" disabled="" type="checkbox"> Largest Trades</li>
@@ -379,6 +380,18 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/balancesheet.html" class="tsd-kind-icon">Balance<wbr>Sheet</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/balancesheetparams.html" class="tsd-kind-icon">Balance<wbr>Sheet<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/balancesheetresponse.html" class="tsd-kind-icon">Balance<wbr>Sheet<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/basicdividends.html" class="tsd-kind-icon">Basic<wbr>Dividends</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/bidorask.html" class="tsd-kind-icon">Bid<wbr>OrAsk</a>
 					</li>
 					<li class=" tsd-kind-interface root">
@@ -388,10 +401,22 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="interfaces/book.html" class="tsd-kind-icon">Book</a>
 					</li>
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/cashflow.html" class="tsd-kind-icon">Cash<wbr>Flow</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/cashflowparams.html" class="tsd-kind-icon">Cash<wbr>Flow<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/cashflowresponse.html" class="tsd-kind-icon">Cash<wbr>Flow<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/company.html" class="tsd-kind-icon">Company</a>
 					</li>
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/datapoint.html" class="tsd-kind-icon">Data<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/delayedquote.html" class="tsd-kind-icon">Delayed<wbr>Quote</a>
 					</li>
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/distribution.html" class="tsd-kind-icon">Distribution</a>
@@ -451,6 +476,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="interfaces/rightstopurchase.html" class="tsd-kind-icon">Rights<wbr>ToPurchase</a>
 					</li>
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/search.html" class="tsd-kind-icon">Search</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/securityreclassification.html" class="tsd-kind-icon">Security<wbr>Reclassification</a>
 					</li>
 					<li class=" tsd-kind-interface root">
@@ -485,6 +513,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					</li>
 					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#dividendfrequency" class="tsd-kind-icon">Dividend<wbr>Frequency</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#dividendsrange" class="tsd-kind-icon">Dividends<wbr>Range</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-is-not-exported root">
 						<a href="globals.html#latestsource" class="tsd-kind-icon">Latest<wbr>Source</a>
@@ -523,13 +554,25 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="globals.html#usage" class="tsd-kind-icon">Usage</a>
 					</li>
 					<li class=" tsd-kind-function root">
+						<a href="globals.html#balancesheet" class="tsd-kind-icon">balance<wbr>Sheet</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#basicdividends" class="tsd-kind-icon">basic<wbr>Dividends</a>
+					</li>
+					<li class=" tsd-kind-function root">
 						<a href="globals.html#bonusissue" class="tsd-kind-icon">bonus<wbr>Issue</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#cashflow" class="tsd-kind-icon">cashflow</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#company" class="tsd-kind-icon">company</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#datapoints" class="tsd-kind-icon">data<wbr>Points</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#delayedquote" class="tsd-kind-icon">delayed<wbr>Quote</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#distribution" class="tsd-kind-icon">distribution</a>
@@ -581,6 +624,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#rightstopurchase" class="tsd-kind-icon">rights<wbr>ToPurchase</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#search" class="tsd-kind-icon">search</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#securityreclassification" class="tsd-kind-icon">security<wbr>Reclassification</a>

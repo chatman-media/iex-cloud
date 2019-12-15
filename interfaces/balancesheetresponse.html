@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RequestConfig | iex-ts-client</title>
+	<title>BalanceSheetResponse | iex-ts-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="requestconfig.html">RequestConfig</a>
+					<a href="balancesheetresponse.html">BalanceSheetResponse</a>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface RequestConfig</h1>
+			<h1>Interface BalanceSheetResponse</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RequestConfig</span>
+						<span class="target">BalanceSheetResponse</span>
 					</li>
 				</ul>
 			</section>
@@ -88,10 +88,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="requestconfig.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="requestconfig.html#method" class="tsd-kind-icon">method</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="requestconfig.html#params" class="tsd-kind-icon">params</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="requestconfig.html#usesecret" class="tsd-kind-icon">useSecret</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="balancesheetresponse.html#balancesheet" class="tsd-kind-icon">balancesheet</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="balancesheetresponse.html#symbol" class="tsd-kind-icon">symbol</a></li>
 							</ul>
 						</section>
 					</div>
@@ -100,42 +98,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="data" class="tsd-anchor"></a>
-					<h3>data</h3>
-					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+					<a name="balancesheet" class="tsd-anchor"></a>
+					<h3>balancesheet</h3>
+					<div class="tsd-signature tsd-kind-icon">balancesheet<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">keyof BalanceSheet[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/ApiRequest.ts:9</li>
+							<li>Defined in endpoints/stock-fundamentals/BalanceSheet.ts:23</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="method" class="tsd-anchor"></a>
-					<h3>method</h3>
-					<div class="tsd-signature tsd-kind-icon">method<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="symbol" class="tsd-anchor"></a>
+					<h3>symbol</h3>
+					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in core/ApiRequest.ts:8</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="params" class="tsd-anchor"></a>
-					<h3>params</h3>
-					<div class="tsd-signature tsd-kind-icon">params<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in core/ApiRequest.ts:10</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="usesecret" class="tsd-anchor"></a>
-					<h3>use<wbr>Secret</h3>
-					<div class="tsd-signature tsd-kind-icon">use<wbr>Secret<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in core/ApiRequest.ts:7</li>
+							<li>Defined in endpoints/stock-fundamentals/BalanceSheet.ts:22</li>
 						</ul>
 					</aside>
 				</section>
@@ -148,19 +126,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="requestconfig.html" class="tsd-kind-icon">Request<wbr>Config</a>
+						<a href="balancesheetresponse.html" class="tsd-kind-icon">Balance<wbr>Sheet<wbr>Response</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="requestconfig.html#data" class="tsd-kind-icon">data</a>
+								<a href="balancesheetresponse.html#balancesheet" class="tsd-kind-icon">balancesheet</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="requestconfig.html#method" class="tsd-kind-icon">method</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="requestconfig.html#params" class="tsd-kind-icon">params</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="requestconfig.html#usesecret" class="tsd-kind-icon">use<wbr>Secret</a>
+								<a href="balancesheetresponse.html#symbol" class="tsd-kind-icon">symbol</a>
 							</li>
 						</ul>
 					</li>
