@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PriceTarget | iex-ts-client</title>
+	<title>Estimate | iex-ts-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="pricetarget.html">PriceTarget</a>
+					<a href="estimate.html">Estimate</a>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface PriceTarget</h1>
+			<h1>Interface Estimate</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PriceTarget</span>
+						<span class="target">Estimate</span>
 					</li>
 				</ul>
 			</section>
@@ -88,12 +88,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#numberofanalysts" class="tsd-kind-icon">numberOfAnalysts</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargetaverage" class="tsd-kind-icon">priceTargetAverage</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargethigh" class="tsd-kind-icon">priceTargetHigh</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargetlow" class="tsd-kind-icon">priceTargetLow</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#symbol" class="tsd-kind-icon">symbol</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#updateddate" class="tsd-kind-icon">updatedDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="estimate.html#consensuseps" class="tsd-kind-icon">consensusEPS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="estimate.html#fiscalenddate" class="tsd-kind-icon">fiscalEndDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="estimate.html#fiscalperiod" class="tsd-kind-icon">fiscalPeriod</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="estimate.html#numberofestimates" class="tsd-kind-icon">numberOfEstimates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="estimate.html#reportdate" class="tsd-kind-icon">reportDate</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,83 +101,73 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="numberofanalysts" class="tsd-anchor"></a>
-					<h3>number<wbr>OfAnalysts</h3>
-					<div class="tsd-signature tsd-kind-icon">number<wbr>OfAnalysts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="consensuseps" class="tsd-anchor"></a>
+					<h3>consensusEPS</h3>
+					<div class="tsd-signature tsd-kind-icon">consensusEPS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:23</li>
+							<li>Defined in endpoints/stock-research/Estimates.ts:25</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Number of analysts that provided price targets</p>
+							<p>Consensus EPS estimate trend for the period. EPS data is split-adjusted by default. Earnings data accounts for all corporate actions including dilutions, splits, reverse splits, spin-offs, exceptional dividends, and rights issues. Investopedia</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargetaverage" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>Average</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>Average<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="fiscalenddate" class="tsd-anchor"></a>
+					<h3>fiscal<wbr>End<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">fiscal<wbr>End<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:17</li>
+							<li>Defined in endpoints/stock-research/Estimates.ts:31</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Average price target</p>
+							<p>Date representing the company fiscal quarter end YYYY-MM-DD</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargethigh" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>High</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>High<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="fiscalperiod" class="tsd-anchor"></a>
+					<h3>fiscal<wbr>Period</h3>
+					<div class="tsd-signature tsd-kind-icon">fiscal<wbr>Period<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:19</li>
+							<li>Defined in endpoints/stock-research/Estimates.ts:29</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Highest price target</p>
+							<p>The fiscal quarter the earnings data applies to Q# YYYY</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargetlow" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>Low</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>Low<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="numberofestimates" class="tsd-anchor"></a>
+					<h3>number<wbr>OfEstimates</h3>
+					<div class="tsd-signature tsd-kind-icon">number<wbr>OfEstimates<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:21</li>
+							<li>Defined in endpoints/stock-research/Estimates.ts:27</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Lowest price target</p>
+							<p>Number of estimates for the period</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="symbol" class="tsd-anchor"></a>
-					<h3>symbol</h3>
-					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="reportdate" class="tsd-anchor"></a>
+					<h3>report<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">report<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:13</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="updateddate" class="tsd-anchor"></a>
-					<h3>updated<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">updated<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:15</li>
+							<li>Defined in endpoints/stock-research/Estimates.ts:33</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Date of the most recent price target</p>
+							<p>Expected report date of next earnings</p>
 					</div></div>
 				</section>
 			</section>
@@ -190,25 +179,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="pricetarget.html" class="tsd-kind-icon">Price<wbr>Target</a>
+						<a href="estimate.html" class="tsd-kind-icon">Estimate</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#numberofanalysts" class="tsd-kind-icon">number<wbr>OfAnalysts</a>
+								<a href="estimate.html#consensuseps" class="tsd-kind-icon">consensusEPS</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargetaverage" class="tsd-kind-icon">price<wbr>Target<wbr>Average</a>
+								<a href="estimate.html#fiscalenddate" class="tsd-kind-icon">fiscal<wbr>End<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargethigh" class="tsd-kind-icon">price<wbr>Target<wbr>High</a>
+								<a href="estimate.html#fiscalperiod" class="tsd-kind-icon">fiscal<wbr>Period</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargetlow" class="tsd-kind-icon">price<wbr>Target<wbr>Low</a>
+								<a href="estimate.html#numberofestimates" class="tsd-kind-icon">number<wbr>OfEstimates</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#symbol" class="tsd-kind-icon">symbol</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#updateddate" class="tsd-kind-icon">updated<wbr>Date</a>
+								<a href="estimate.html#reportdate" class="tsd-kind-icon">report<wbr>Date</a>
 							</li>
 						</ul>
 					</li>

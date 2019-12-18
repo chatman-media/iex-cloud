@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PriceTarget | iex-ts-client</title>
+	<title>InsiderRoster | iex-ts-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="pricetarget.html">PriceTarget</a>
+					<a href="insiderroster.html">InsiderRoster</a>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface PriceTarget</h1>
+			<h1>Interface InsiderRoster</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PriceTarget</span>
+						<span class="target">InsiderRoster</span>
 					</li>
 				</ul>
 			</section>
@@ -88,12 +88,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#numberofanalysts" class="tsd-kind-icon">numberOfAnalysts</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargetaverage" class="tsd-kind-icon">priceTargetAverage</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargethigh" class="tsd-kind-icon">priceTargetHigh</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargetlow" class="tsd-kind-icon">priceTargetLow</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#symbol" class="tsd-kind-icon">symbol</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#updateddate" class="tsd-kind-icon">updatedDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="insiderroster.html#entityname" class="tsd-kind-icon">entityName</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="insiderroster.html#position" class="tsd-kind-icon">position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="insiderroster.html#reportdate" class="tsd-kind-icon">reportDate</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,83 +99,45 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="numberofanalysts" class="tsd-anchor"></a>
-					<h3>number<wbr>OfAnalysts</h3>
-					<div class="tsd-signature tsd-kind-icon">number<wbr>OfAnalysts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="entityname" class="tsd-anchor"></a>
+					<h3>entity<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">entity<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:23</li>
+							<li>Defined in endpoints/stock-profiles/InsiderRoster.ts:13</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Number of analysts that provided price targets</p>
+							<p>Name of the entity</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargetaverage" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>Average</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>Average<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="position" class="tsd-anchor"></a>
+					<h3>position</h3>
+					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:17</li>
+							<li>Defined in endpoints/stock-profiles/InsiderRoster.ts:17</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Average price target</p>
+							<p>Number of shares held, adjusted for corporate actions</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargethigh" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>High</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>High<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="reportdate" class="tsd-anchor"></a>
+					<h3>report<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">report<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:19</li>
+							<li>Defined in endpoints/stock-profiles/InsiderRoster.ts:15</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Highest price target</p>
-					</div></div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargetlow" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>Low</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>Low<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:21</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Lowest price target</p>
-					</div></div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="symbol" class="tsd-anchor"></a>
-					<h3>symbol</h3>
-					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:13</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="updateddate" class="tsd-anchor"></a>
-					<h3>updated<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">updated<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:15</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Date of the most recent price target</p>
+							<p>refers to the update time of report_date in milliseconds since midnight Jan 1, 1970.</p>
 					</div></div>
 				</section>
 			</section>
@@ -190,25 +149,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="pricetarget.html" class="tsd-kind-icon">Price<wbr>Target</a>
+						<a href="insiderroster.html" class="tsd-kind-icon">Insider<wbr>Roster</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#numberofanalysts" class="tsd-kind-icon">number<wbr>OfAnalysts</a>
+								<a href="insiderroster.html#entityname" class="tsd-kind-icon">entity<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargetaverage" class="tsd-kind-icon">price<wbr>Target<wbr>Average</a>
+								<a href="insiderroster.html#position" class="tsd-kind-icon">position</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargethigh" class="tsd-kind-icon">price<wbr>Target<wbr>High</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargetlow" class="tsd-kind-icon">price<wbr>Target<wbr>Low</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#symbol" class="tsd-kind-icon">symbol</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#updateddate" class="tsd-kind-icon">updated<wbr>Date</a>
+								<a href="insiderroster.html#reportdate" class="tsd-kind-icon">report<wbr>Date</a>
 							</li>
 						</ul>
 					</li>

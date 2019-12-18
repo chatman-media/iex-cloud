@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HistoricalPriceParams | iex-ts-client</title>
+	<title>AnalystRecommendation | iex-ts-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="historicalpriceparams.html">HistoricalPriceParams</a>
+					<a href="analystrecommendation.html">AnalystRecommendation</a>
 				</li>
 			</ul>
 		</div>
@@ -73,18 +73,14 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface HistoricalPriceParams</h1>
+			<h1>Interface AnalystRecommendation</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">HistoricalPriceParams</span>
+						<span class="target">AnalystRecommendation</span>
 					</li>
 				</ul>
-			</section>
-			<section class="tsd-panel tsd-kind-interface">
-				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
@@ -92,16 +88,16 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#changefromclose" class="tsd-kind-icon">changeFromClose</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#chartbyday" class="tsd-kind-icon">chartByDay</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#chartcloseonly" class="tsd-kind-icon">chartCloseOnly</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#chartinterval" class="tsd-kind-icon">chartInterval</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#chartlast" class="tsd-kind-icon">chartLast</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#chartsimplify" class="tsd-kind-icon">chartSimplify</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#exactdate" class="tsd-kind-icon">exactDate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#includetoday" class="tsd-kind-icon">includeToday</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#range" class="tsd-kind-icon">range</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="historicalpriceparams.html#sort" class="tsd-kind-icon">sort</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#consensusenddate" class="tsd-kind-icon">consensusEndDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#consensusstartdate" class="tsd-kind-icon">consensusStartDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#corporateactionsapplieddate" class="tsd-kind-icon">corporateActionsAppliedDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#ratingbuy" class="tsd-kind-icon">ratingBuy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#ratinghold" class="tsd-kind-icon">ratingHold</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#ratingnone" class="tsd-kind-icon">ratingNone</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#ratingoverweight" class="tsd-kind-icon">ratingOverweight</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#ratingscalemark" class="tsd-kind-icon">ratingScaleMark</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#ratingsell" class="tsd-kind-icon">ratingSell</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="analystrecommendation.html#ratingunderweight" class="tsd-kind-icon">ratingUnderweight</a></li>
 							</ul>
 						</section>
 					</div>
@@ -110,143 +106,144 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="changefromclose" class="tsd-anchor"></a>
-					<h3>change<wbr>From<wbr>Close</h3>
-					<div class="tsd-signature tsd-kind-icon">change<wbr>From<wbr>Close<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="consensusenddate" class="tsd-anchor"></a>
+					<h3>consensus<wbr>End<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">consensus<wbr>End<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:65</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:15</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>If true, <code>changeOverTime</code> and <code>marketChangeOverTime</code> will be relative to previous day close instead of the first value.</p>
+							<p>Date that represents the last date the consensus value was effective. A NULL value indicates the consensus value is considered current. Represented as millisecond epoch time</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="chartbyday" class="tsd-anchor"></a>
-					<h3>chart<wbr>ByDay</h3>
-					<div class="tsd-signature tsd-kind-icon">chart<wbr>ByDay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="consensusstartdate" class="tsd-anchor"></a>
+					<h3>consensus<wbr>Start<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">consensus<wbr>Start<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:59</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:17</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Used only when range is <code>date</code> to return OHLCV data instead of minute bar data.</p>
+							<p>Date that represents the earliest date the consensus value was effective Represented as millisecond epoch time</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="chartcloseonly" class="tsd-anchor"></a>
-					<h3>chart<wbr>Close<wbr>Only</h3>
-					<div class="tsd-signature tsd-kind-icon">chart<wbr>Close<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="corporateactionsapplieddate" class="tsd-anchor"></a>
+					<h3>corporate<wbr>Actions<wbr>Applied<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">corporate<wbr>Actions<wbr>Applied<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:57</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:19</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Will return adjusted data only with keys <code>date</code>, <code>close</code>, and <code>volume</code>.</p>
+							<p>Date through which corporate actions have been applied Represented as millisecond epoch time</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="chartinterval" class="tsd-anchor"></a>
-					<h3>chart<wbr>Interval</h3>
-					<div class="tsd-signature tsd-kind-icon">chart<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="ratingbuy" class="tsd-anchor"></a>
+					<h3>rating<wbr>Buy</h3>
+					<div class="tsd-signature tsd-kind-icon">rating<wbr>Buy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:63</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:21</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>If passed, chart data will return every Nth element as defined by <code>chartInterval</code>.</p>
+							<p>Number of recommendations that fall into the Buy category</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="chartlast" class="tsd-anchor"></a>
-					<h3>chart<wbr>Last</h3>
-					<div class="tsd-signature tsd-kind-icon">chart<wbr>Last<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="ratinghold" class="tsd-anchor"></a>
+					<h3>rating<wbr>Hold</h3>
+					<div class="tsd-signature tsd-kind-icon">rating<wbr>Hold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:67</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:25</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>If passed, chart data will return the last N elements from the time period defined by the range parameter.</p>
+							<p>Number of recommendations that fall into the Hold category</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="chartsimplify" class="tsd-anchor"></a>
-					<h3>chart<wbr>Simplify</h3>
-					<div class="tsd-signature tsd-kind-icon">chart<wbr>Simplify<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="ratingnone" class="tsd-anchor"></a>
+					<h3>rating<wbr>None</h3>
+					<div class="tsd-signature tsd-kind-icon">rating<wbr>None<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:61</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:31</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>If true, runs a polyline simplification using the Douglas-Peucker algorithm. This is useful if plotting sparkline charts.</p>
+							<p>Number of brokers where no recommendation is available</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exactdate" class="tsd-anchor"></a>
-					<h3>exact<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">exact<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="ratingoverweight" class="tsd-anchor"></a>
+					<h3>rating<wbr>Overweight</h3>
+					<div class="tsd-signature tsd-kind-icon">rating<wbr>Overweight<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:71</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:23</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Formatted as YYYYMMDD. This can be used for batch calls when range is 1d or date.</p>
+							<p>Number of recommendations that fall into the Overweight category</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="includetoday" class="tsd-anchor"></a>
-					<h3>include<wbr>Today</h3>
-					<div class="tsd-signature tsd-kind-icon">include<wbr>Today<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="ratingscalemark" class="tsd-anchor"></a>
+					<h3>rating<wbr>Scale<wbr>Mark</h3>
+					<div class="tsd-signature tsd-kind-icon">rating<wbr>Scale<wbr>Mark<span class="tsd-signature-symbol">:</span> <a href="../globals.html#recommendationrating" class="tsd-signature-type">RecommendationRating</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:75</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:36</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>If true, current trading day data is appended.</p>
+							<p>Numeric value based on a standardized scale representing the consensus of broker recommendations.
+							Recommendations are divided into five categories: Buy, Overweight, Hold, Underweight, and Sell. Each is rated between 1 and 3 as shown in the table below.</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="range" class="tsd-anchor"></a>
-					<h3>range</h3>
-					<div class="tsd-signature tsd-kind-icon">range<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="ratingsell" class="tsd-anchor"></a>
+					<h3>rating<wbr>Sell</h3>
+					<div class="tsd-signature tsd-kind-icon">rating<wbr>Sell<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:69</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:29</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Same format as the path parameter. This can be used for batch calls.</p>
+							<p>Number of recommendations that fall into the Sell category</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sort" class="tsd-anchor"></a>
-					<h3>sort</h3>
-					<div class="tsd-signature tsd-kind-icon">sort<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="ratingunderweight" class="tsd-anchor"></a>
+					<h3>rating<wbr>Underweight</h3>
+					<div class="tsd-signature tsd-kind-icon">rating<wbr>Underweight<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-prices/HistoricalPrice.ts:73</li>
+							<li>Defined in endpoints/stock-research/AnalystRecommendations.ts:27</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Can be <code>asc</code> or <code>desc</code> to sort results by date. Defaults to <code>desc</code>.</p>
+							<p>Number of recommendations that fall into the Underweight category</p>
 					</div></div>
 				</section>
 			</section>
@@ -258,37 +255,37 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="historicalpriceparams.html" class="tsd-kind-icon">Historical<wbr>Price<wbr>Params</a>
+						<a href="analystrecommendation.html" class="tsd-kind-icon">Analyst<wbr>Recommendation</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#changefromclose" class="tsd-kind-icon">change<wbr>From<wbr>Close</a>
+								<a href="analystrecommendation.html#consensusenddate" class="tsd-kind-icon">consensus<wbr>End<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#chartbyday" class="tsd-kind-icon">chart<wbr>ByDay</a>
+								<a href="analystrecommendation.html#consensusstartdate" class="tsd-kind-icon">consensus<wbr>Start<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#chartcloseonly" class="tsd-kind-icon">chart<wbr>Close<wbr>Only</a>
+								<a href="analystrecommendation.html#corporateactionsapplieddate" class="tsd-kind-icon">corporate<wbr>Actions<wbr>Applied<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#chartinterval" class="tsd-kind-icon">chart<wbr>Interval</a>
+								<a href="analystrecommendation.html#ratingbuy" class="tsd-kind-icon">rating<wbr>Buy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#chartlast" class="tsd-kind-icon">chart<wbr>Last</a>
+								<a href="analystrecommendation.html#ratinghold" class="tsd-kind-icon">rating<wbr>Hold</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#chartsimplify" class="tsd-kind-icon">chart<wbr>Simplify</a>
+								<a href="analystrecommendation.html#ratingnone" class="tsd-kind-icon">rating<wbr>None</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#exactdate" class="tsd-kind-icon">exact<wbr>Date</a>
+								<a href="analystrecommendation.html#ratingoverweight" class="tsd-kind-icon">rating<wbr>Overweight</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#includetoday" class="tsd-kind-icon">include<wbr>Today</a>
+								<a href="analystrecommendation.html#ratingscalemark" class="tsd-kind-icon">rating<wbr>Scale<wbr>Mark</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#range" class="tsd-kind-icon">range</a>
+								<a href="analystrecommendation.html#ratingsell" class="tsd-kind-icon">rating<wbr>Sell</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="historicalpriceparams.html#sort" class="tsd-kind-icon">sort</a>
+								<a href="analystrecommendation.html#ratingunderweight" class="tsd-kind-icon">rating<wbr>Underweight</a>
 							</li>
 						</ul>
 					</li>

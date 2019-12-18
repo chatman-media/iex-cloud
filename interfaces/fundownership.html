@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PriceTarget | iex-ts-client</title>
+	<title>FundOwnership | iex-ts-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="pricetarget.html">PriceTarget</a>
+					<a href="fundownership.html">FundOwnership</a>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface PriceTarget</h1>
+			<h1>Interface FundOwnership</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PriceTarget</span>
+						<span class="target">FundOwnership</span>
 					</li>
 				</ul>
 			</section>
@@ -88,12 +88,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#numberofanalysts" class="tsd-kind-icon">numberOfAnalysts</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargetaverage" class="tsd-kind-icon">priceTargetAverage</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargethigh" class="tsd-kind-icon">priceTargetHigh</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#pricetargetlow" class="tsd-kind-icon">priceTargetLow</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#symbol" class="tsd-kind-icon">symbol</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pricetarget.html#updateddate" class="tsd-kind-icon">updatedDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fundownership.html#adjholding" class="tsd-kind-icon">adjHolding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fundownership.html#adjmv" class="tsd-kind-icon">adjMv</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fundownership.html#entitypropername" class="tsd-kind-icon">entityProperName</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fundownership.html#reportdate" class="tsd-kind-icon">reportDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fundownership.html#reportedholding" class="tsd-kind-icon">reportedHolding</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="fundownership.html#reportedmv" class="tsd-kind-icon">reportedMv</a></li>
 							</ul>
 						</section>
 					</div>
@@ -102,83 +102,87 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="numberofanalysts" class="tsd-anchor"></a>
-					<h3>number<wbr>OfAnalysts</h3>
-					<div class="tsd-signature tsd-kind-icon">number<wbr>OfAnalysts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="adjholding" class="tsd-anchor"></a>
+					<h3>adj<wbr>Holding</h3>
+					<div class="tsd-signature tsd-kind-icon">adj<wbr>Holding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:23</li>
+							<li>Defined in endpoints/stock-research/FundOwnership.ts:14</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Number of analysts that provided price targets</p>
+							<p>Share amount held by the fund as of the report date, adjusted for corporate actions</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargetaverage" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>Average</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>Average<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="adjmv" class="tsd-anchor"></a>
+					<h3>adj<wbr>Mv</h3>
+					<div class="tsd-signature tsd-kind-icon">adj<wbr>Mv<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:17</li>
+							<li>Defined in endpoints/stock-research/FundOwnership.ts:16</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Average price target</p>
+							<p>Total share amount multiplied by the latest month-end share price, adjusted for corporate actions in USD</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargethigh" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>High</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>High<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="entitypropername" class="tsd-anchor"></a>
+					<h3>entity<wbr>Proper<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">entity<wbr>Proper<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:19</li>
+							<li>Defined in endpoints/stock-research/FundOwnership.ts:18</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Highest price target</p>
+							<p>Name of the entity</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pricetargetlow" class="tsd-anchor"></a>
-					<h3>price<wbr>Target<wbr>Low</h3>
-					<div class="tsd-signature tsd-kind-icon">price<wbr>Target<wbr>Low<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="reportdate" class="tsd-anchor"></a>
+					<h3>report<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">report<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:21</li>
+							<li>Defined in endpoints/stock-research/FundOwnership.ts:20</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Lowest price target</p>
+							<p>refers to the update time of report_date in milliseconds since midnight Jan 1, 1970.</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="symbol" class="tsd-anchor"></a>
-					<h3>symbol</h3>
-					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="reportedholding" class="tsd-anchor"></a>
+					<h3>reported<wbr>Holding</h3>
+					<div class="tsd-signature tsd-kind-icon">reported<wbr>Holding<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:13</li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="updateddate" class="tsd-anchor"></a>
-					<h3>updated<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">updated<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/stock-research/PriceTarget.ts:15</li>
+							<li>Defined in endpoints/stock-research/FundOwnership.ts:22</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Date of the most recent price target</p>
+							<p>Share amount held by the fund as reported in the source</p>
+					</div></div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="reportedmv" class="tsd-anchor"></a>
+					<h3>reported<wbr>Mv</h3>
+					<div class="tsd-signature tsd-kind-icon">reported<wbr>Mv<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in endpoints/stock-research/FundOwnership.ts:24</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+						<div class="lead">
+							<p>Market value held by the fund as reported in the source, represented in USD.</p>
 					</div></div>
 				</section>
 			</section>
@@ -190,25 +194,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="pricetarget.html" class="tsd-kind-icon">Price<wbr>Target</a>
+						<a href="fundownership.html" class="tsd-kind-icon">Fund<wbr>Ownership</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#numberofanalysts" class="tsd-kind-icon">number<wbr>OfAnalysts</a>
+								<a href="fundownership.html#adjholding" class="tsd-kind-icon">adj<wbr>Holding</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargetaverage" class="tsd-kind-icon">price<wbr>Target<wbr>Average</a>
+								<a href="fundownership.html#adjmv" class="tsd-kind-icon">adj<wbr>Mv</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargethigh" class="tsd-kind-icon">price<wbr>Target<wbr>High</a>
+								<a href="fundownership.html#entitypropername" class="tsd-kind-icon">entity<wbr>Proper<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#pricetargetlow" class="tsd-kind-icon">price<wbr>Target<wbr>Low</a>
+								<a href="fundownership.html#reportdate" class="tsd-kind-icon">report<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#symbol" class="tsd-kind-icon">symbol</a>
+								<a href="fundownership.html#reportedholding" class="tsd-kind-icon">reported<wbr>Holding</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pricetarget.html#updateddate" class="tsd-kind-icon">updated<wbr>Date</a>
+								<a href="fundownership.html#reportedmv" class="tsd-kind-icon">reported<wbr>Mv</a>
 							</li>
 						</ul>
 					</li>
