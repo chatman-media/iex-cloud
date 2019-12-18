@@ -11,12 +11,12 @@ export const dataPoints = (symbol: string, key?: string): Promise<readonly DataP
 };
 
 export interface DataPoint {
-    /**  Data key used to call a specific data point */
+    /** Data key used to call a specific data point */
     readonly key: string;
-    /**  Data weight to call the individual data point in number of messages. */
+    /** Data weight to call the individual data point in number of messages. */
     readonly weight: number;
-    /**  Description of the data point */
+    /** Description of the data point */
     readonly description: string;
-    /**  ISO 8601 formatted date time the data point was last updated. */
+    /** ISO 8601 formatted date time the data point was last updated. */
     readonly lastUpdated: string;
 }

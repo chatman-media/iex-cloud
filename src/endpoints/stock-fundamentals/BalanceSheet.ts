@@ -24,9 +24,9 @@ export interface BalanceSheetResponse {
 }
 
 export interface BalanceSheetParams {
-    /**  Allows you to specify annual or quarterly balance sheet. Defaults to quarter. Values should be annual or quarter */
+    /** Allows you to specify annual or quarterly balance sheet. Defaults to quarter. Values should be annual or quarter */
     readonly period?: string;
-    /**  Specify the number of quarters or years to return. One quarter is returned by default. You can specify up to 12 quarters with quarter, or up to 4 years with annual. */
+    /** Specify the number of quarters or years to return. One quarter is returned by default. You can specify up to 12 quarters with quarter, or up to 4 years with annual. */
     readonly last?: number;
 }
 

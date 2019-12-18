@@ -15,45 +15,45 @@ export const bonusIssue = (symbol?: string, refid?: string): Promise<readonly Bo
 };
 
 export interface BonusIssue {
-    /**  Symbol of the security */
+    /** Symbol of the security */
     readonly symbol: string;
-    /**  The date that determines which shareholders will be entitled to receive the issue. YYYY-MM-DD */
+    /** The date that determines which shareholders will be entitled to receive the issue. YYYY-MM-DD */
     readonly exDate: string;
-    /**  When the company examines its current list of shareholders to determine who will receive the issue. Only those who are registered as shareholders in the company’s books as of the record date will be entitled to receive the issue. YYYY-MM-DD */
+    /** When the company examines its current list of shareholders to determine who will receive the issue. Only those who are registered as shareholders in the company’s books as of the record date will be entitled to receive the issue. YYYY-MM-DD */
     readonly recordDate: string;
-    /**  The date when the dividend is actually paid to eligible shareholders. YYYY-MM-DD */
+    /** The date when the dividend is actually paid to eligible shareholders. YYYY-MM-DD */
     readonly paymentDate: string;
-    /**  Number of starting shares */
+    /** Number of starting shares */
     readonly fromFactor: number;
-    /**  Number of ending shares */
+    /** Number of ending shares */
     readonly toFactor: number;
-    /**  fromFactor divided by toFactor */
+    /** fromFactor divided by toFactor */
     readonly ratio: number;
-    /**  Security description. */
+    /** Security description. */
     readonly description: string;
-    /**  The payment type. */
+    /** The payment type. */
     readonly flag: PaymentType;
-    /**  Type of security. */
+    /** Type of security. */
     readonly securityType: SecurityType;
-    /**  Type of security. */
+    /** Type of security. */
     readonly resultSecurityType: SecurityType;
-    /**  Long description */
+    /** Long description */
     readonly notes: string;
-    /**  OpenFIGI id for the symbol */
+    /** OpenFIGI id for the symbol */
     readonly figi: string;
-    /**  Date the record was last changed. YYYY-MM-DD */
+    /** Date the record was last changed. YYYY-MM-DD */
     readonly lastUpdated: string;
-    /**  ISO currency code for the amount */
+    /** ISO currency code for the amount */
     readonly currency: string;
-    /**  refers to the country code for the symbol using ISO 3166-1 alpha-2 */
+    /** refers to the country code for the symbol using ISO 3166-1 alpha-2 */
     readonly countryCode: string;
-    /**  Par value is the face value of a bond. Par value is important for a bond or fixed-income instrument because it determines its maturity value as well as the dollar value of coupon payments. Par value for a share refers to the stock value stated in the corporate charter. */
+    /** Par value is the face value of a bond. Par value is important for a bond or fixed-income instrument because it determines its maturity value as well as the dollar value of coupon payments. Par value for a share refers to the stock value stated in the corporate charter. */
     readonly parValue: number;
-    /**  ISO currency code for parValue */
+    /** ISO currency code for parValue */
     readonly parValueCurrency: string;
     readonly lapsedPremium: number;
-    /**  Unique id representing the record */
+    /** Unique id representing the record */
     readonly refid: string;
-    /**  Date the record was created. YYYY-MM-DD */
+    /** Date the record was created. YYYY-MM-DD */
     readonly created: string;
 }

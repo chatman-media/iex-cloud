@@ -54,11 +54,11 @@ export interface HistoricalPrice {
 export interface HistoricalPriceParams {
     /** Will return adjusted data only with keys `date`, `close`, and `volume`. */
     readonly chartCloseOnly?: boolean;
-    /**  Used only when range is `date` to return OHLCV data instead of minute bar data. */
+    /** Used only when range is `date` to return OHLCV data instead of minute bar data. */
     readonly chartByDay?: boolean;
-    /**  If true, runs a polyline simplification using the Douglas-Peucker algorithm. This is useful if plotting sparkline charts. */
+    /** If true, runs a polyline simplification using the Douglas-Peucker algorithm. This is useful if plotting sparkline charts. */
     readonly chartSimplify?: boolean;
-    /**  If passed, chart data will return every Nth element as defined by `chartInterval`. */
+    /** If passed, chart data will return every Nth element as defined by `chartInterval`. */
     readonly chartInterval?: number;
     /** If true, `changeOverTime` and `marketChangeOverTime` will be relative to previous day close instead of the first value. */
     readonly changeFromClose?: boolean;

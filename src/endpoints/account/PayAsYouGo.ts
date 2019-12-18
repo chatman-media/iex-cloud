@@ -11,8 +11,8 @@ export const PayAsYouGo = (allow: boolean): Promise<any> => {
 };
 
 export interface PayAsYouGoParams {
-    /**  Your SK API token. */
+    /** Your SK API token. */
     readonly token: boolean;
-    /**  Pass true to enable Pay-as-you-go, or false to disable. */
+    /** Pass true to enable Pay-as-you-go, or false to disable. */
     readonly allow: boolean;
 }

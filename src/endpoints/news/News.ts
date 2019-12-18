@@ -10,20 +10,20 @@ export const news = (symbol: string, last: number = 10): Promise<readonly News[]
 };
 
 export interface News {
-    /**  Millisecond epoch of time of article */
+    /** Millisecond epoch of time of article */
     readonly datetime: Date;
     readonly headline: string;
-    /**  Source of the news article. Make sure to always attribute the source. */
+    /** Source of the news article. Make sure to always attribute the source. */
     readonly source: string;
-    /**  URL to IEX Cloud for associated news image. Note: You will need to append your token before calling. */
+    /** URL to IEX Cloud for associated news image. Note: You will need to append your token before calling. */
     readonly url: string;
     readonly summary: string;
-    /**  Comma-delimited list of tickers associated with this news article. Not all tickers are available on the API. Make sure to check against available ref-data */
+    /** Comma-delimited list of tickers associated with this news article. Not all tickers are available on the API. Make sure to check against available ref-data */
     readonly related: string;
-    /**  URL to IEX Cloud for associated news image. Note: You will need to append your token before calling. */
+    /** URL to IEX Cloud for associated news image. Note: You will need to append your token before calling. */
     readonly image: string;
-    /**  Language of the source article */
+    /** Language of the source article */
     readonly lang: string;
-    /**  Whether the news source has a paywall */
+    /** Whether the news source has a paywall */
     readonly hasPaywall: boolean;
 }

@@ -13,9 +13,9 @@ export const search = (fragment: string): Promise<readonly Search[]> => {
 };
 
 export interface Search {
-    /**  refers to the symbol represented in Nasdaq Integrated symbology (INET). */
+    /** refers to the symbol represented in Nasdaq Integrated symbology (INET). */
     readonly symbol: string;
-    /**  Name of the security */
+    /** Name of the security */
     readonly securityName: string;
     /**
      * refers to the common issue type -
@@ -33,10 +33,9 @@ export interface Search {
      *   UT- Unit
      *   TEMP - Temporary
      */
-    /**   */
     readonly securityType: string;
-    /**  refers to the country code for the symbol using ISO 3166-1 alpha-2 */
+    /** refers to the country code for the symbol using ISO 3166-1 alpha-2 */
     readonly region: string;
-    /**  refers to Exchange using IEX Supported Exchanges list */
+    /** refers to Exchange using IEX Supported Exchanges list */
     readonly exchange: string;
 }

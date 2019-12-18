@@ -1,7 +1,8 @@
 // tslint:disable-next-line: no-submodule-imports
 import 'dotenv/config';
+import { splitsBasic } from './endpoints/stock-fundamentals';
 
 export * from './endpoints';
 export * from './core';
 
-// search(`UNG`).then(x => console.log(x));
+splitsBasic(`MSFT`, '5y').then(x => console.log(x));

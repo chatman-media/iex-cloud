@@ -38,7 +38,7 @@ export const ApiRequest = async (
     const urlWithParams = params ? `${url}&${paramsToQuery(params)}` : url;
 
     try {
-        // console.log(urlWithParams);
+        console.log(urlWithParams);
         const response =
             method === 'GET'
                 ? await fetch(urlWithParams)
@@ -49,7 +49,7 @@ export const ApiRequest = async (
         const json = await response.json();
         return json;
     } catch (error) {
-        // console.log(error?.message);
+        console.log(error?.message);
         // console.log(response?.statusText);
         return null;
     }
