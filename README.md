@@ -103,15 +103,14 @@ you want a particular API to be developed next, please open an issue.
 
 ### Stock Fundamentals
 
-- [ ] Balance Sheet
-- [ ] Cash Flow
-- [ ] Dividends (Basic)
-- [ ] Earnings
-- [ ] Financials
+- [x] Balance Sheet
+- [x] Cash Flow
+- [x] Dividends (Basic)
+- [x] Earnings
+- [x] Financials
 - [ ] Financials As Reported
-- [ ] Income Statement
-- [ ] SEC Filings — Use the Financials As Reported endpoint for raw SEC filings data.
-- [ ] Splits (Basic)
+- [x] Income Statement
+- [x] Splits (Basic)
 
 ### Stock Research
 
