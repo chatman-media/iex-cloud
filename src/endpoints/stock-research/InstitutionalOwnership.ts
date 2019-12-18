@@ -5,7 +5,9 @@ import { ApiRequest } from '../../core/ApiRequest';
  * Returns the top 10 institutional holders, defined as buy-side or sell-side firms.
  * Only included with paid subscription plans
  */
-export const institutionalOwnership = (symbol: string): Promise<readonly InstitutionalOwnership[]> => {
+export const institutionalOwnership = (
+    symbol: string,
+): Promise<readonly InstitutionalOwnership[]> => {
     return ApiRequest(`stock/${symbol}/institutional-ownership`);
 };
 
