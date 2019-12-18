@@ -87,10 +87,10 @@ you want a particular API to be developed next, please open an issue.
 - [x] Intraday Prices
 - [x] Largest Trades
 - [x] OHLC
-- [ ] Previous Day Price
+- [x] Previous Day Price
 - [x] Price Only
 - [x] Quote
-- [ ] Volume by Venue
+- [x] Volume by Venue
 
 ### Stock Profiles
 

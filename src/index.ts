@@ -2,6 +2,7 @@
 import 'dotenv/config';
 import { splitsBasic } from './endpoints/stock-fundamentals';
 
+export * from './utils';
 export * from './endpoints';
 export * from './core';
 

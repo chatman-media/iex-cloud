@@ -8,7 +8,10 @@ import { ApiRequest } from '../../core';
  * @param symbol
  * @param range
  */
-export const splitsBasic = (symbol: string, range?: SplitsBasicRange): Promise<readonly SplitsBasic[]> => {
+export const splitsBasic = (
+    symbol: string,
+    range?: SplitsBasicRange,
+): Promise<readonly SplitsBasic[]> => {
     return ApiRequest(`stock/${symbol}/splits/${range || ''}`);
 };
 

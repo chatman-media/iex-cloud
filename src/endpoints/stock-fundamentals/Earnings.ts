@@ -1,3 +1,5 @@
+import { isString } from 'util';
+
 import { ApiRequest } from '../../core';
 
 /**
@@ -16,7 +18,10 @@ export const earnings = (
     field?: string,
     params?: EarningsParams,
 ): Promise<EarningsResponse> => {
-    return ApiRequest(`stock/${symbol}/earnings/${last}${field ? `/${field}` : ''}`, { params });
+    return ApiRequest(
+        `stock/${symbol}/earnings/${[last, field].filter(x => isString(x)).join('/')}`,
+        { params },
+    );
 };
 
 export interface EarningsParams {
