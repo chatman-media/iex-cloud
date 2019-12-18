@@ -111,10 +111,11 @@
 				<a href="#configure" id="configure" style="color: inherit; text-decoration: none;">
 					<h3>Configure</h3>
 				</a>
-				<p>Put your API tokens (and version if differs from default <code>v1</code>) to your environment file (<code>.env</code>):</p>
-				<pre><code class="language-sh">IEX_API_TOKEN=<span class="hljs-string">'pk_XXXX'</span>
-IEX_API_SECRET_TOKEN=<span class="hljs-string">'sk_XXXX'</span>
-IEX_API_SECRET_VERSION=<span class="hljs-string">'beta'</span></code></pre>
+				<p>Put your API tokens to your environment file (<code>.env</code>) and specify version (default is <code>v1</code>) and IEX environment (<code>cloud</code>) if needed:</p>
+				<pre><code class="language-sh">IEX_API_TOKEN=pk_XXXX
+IEX_API_SECRET_TOKEN=sk_XXXX
+IEX_API_SECRET_VERSION=beta
+IEX_API_ENV=cloud</code></pre>
 				<p>Call any methods:</p>
 				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { metadata } <span class="hljs-keyword">from</span> <span class="hljs-string">'iex-ts-client'</span>;
 
@@ -389,9 +390,6 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="interfaces/balancesheetresponse.html" class="tsd-kind-icon">Balance<wbr>Sheet<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface root">
-						<a href="interfaces/basicdividends.html" class="tsd-kind-icon">Basic<wbr>Dividends</a>
-					</li>
-					<li class=" tsd-kind-interface root">
 						<a href="interfaces/bidorask.html" class="tsd-kind-icon">Bid<wbr>OrAsk</a>
 					</li>
 					<li class=" tsd-kind-interface root">
@@ -425,10 +423,40 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="interfaces/dividend.html" class="tsd-kind-icon">Dividend</a>
 					</li>
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/dividendsbasic.html" class="tsd-kind-icon">Dividends<wbr>Basic</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/earnings.html" class="tsd-kind-icon">Earnings</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/earningsparams.html" class="tsd-kind-icon">Earnings<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/earningsresponse.html" class="tsd-kind-icon">Earnings<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/financials.html" class="tsd-kind-icon">Financials</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/financialsparams.html" class="tsd-kind-icon">Financials<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/financialsresponse.html" class="tsd-kind-icon">Financials<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/historicalprice.html" class="tsd-kind-icon">Historical<wbr>Price</a>
 					</li>
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/historicalpriceparams.html" class="tsd-kind-icon">Historical<wbr>Price<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/incomestatement.html" class="tsd-kind-icon">Income<wbr>Statement</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/incomestatementparams.html" class="tsd-kind-icon">Income<wbr>Statement<wbr>Params</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/incomestatementresponse.html" class="tsd-kind-icon">Income<wbr>Statement<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/intradayprice.html" class="tsd-kind-icon">Intraday<wbr>Price</a>
@@ -491,6 +519,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="interfaces/split.html" class="tsd-kind-icon">Split</a>
 					</li>
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/splitsbasic.html" class="tsd-kind-icon">Splits<wbr>Basic</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/stat.html" class="tsd-kind-icon">Stat</a>
 					</li>
 					<li class=" tsd-kind-interface root">
@@ -539,6 +570,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="globals.html#splittype" class="tsd-kind-icon">Split<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#splitsbasicrange" class="tsd-kind-icon">Splits<wbr>Basic<wbr>Range</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#timeseriesrange" class="tsd-kind-icon">Time<wbr>Series<wbr>Range</a>
 					</li>
 					<li class=" tsd-kind-type-alias root">
@@ -555,9 +589,6 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#balancesheet" class="tsd-kind-icon">balance<wbr>Sheet</a>
-					</li>
-					<li class=" tsd-kind-function root">
-						<a href="globals.html#basicdividends" class="tsd-kind-icon">basic<wbr>Dividends</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#bonusissue" class="tsd-kind-icon">bonus<wbr>Issue</a>
@@ -581,7 +612,19 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="globals.html#dividends" class="tsd-kind-icon">dividends</a>
 					</li>
 					<li class=" tsd-kind-function root">
+						<a href="globals.html#dividendsbasic" class="tsd-kind-icon">dividends<wbr>Basic</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#earnings" class="tsd-kind-icon">earnings</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#financials" class="tsd-kind-icon">financials</a>
+					</li>
+					<li class=" tsd-kind-function root">
 						<a href="globals.html#historicalprices" class="tsd-kind-icon">historical<wbr>Prices</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#incomestatement" class="tsd-kind-icon">income<wbr>Statement</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#intradayprices" class="tsd-kind-icon">intraday<wbr>Prices</a>
@@ -639,6 +682,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#splits" class="tsd-kind-icon">splits</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#splitsbasic" class="tsd-kind-icon">splits<wbr>Basic</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#stats" class="tsd-kind-icon">stats</a>

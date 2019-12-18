@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Search | iex-ts-client</title>
+	<title>EarningsParams | iex-ts-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="search.html">Search</a>
+					<a href="earningsparams.html">EarningsParams</a>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface Search</h1>
+			<h1>Interface EarningsParams</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Search</span>
+						<span class="target">EarningsParams</span>
 					</li>
 				</ul>
 			</section>
@@ -88,11 +88,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#exchange" class="tsd-kind-icon">exchange</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#region" class="tsd-kind-icon">region</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#securityname" class="tsd-kind-icon">securityName</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#securitytype" class="tsd-kind-icon">securityType</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#symbol" class="tsd-kind-icon">symbol</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="earningsparams.html#last" class="tsd-kind-icon">last</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="earningsparams.html#period" class="tsd-kind-icon">period</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,86 +98,31 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exchange" class="tsd-anchor"></a>
-					<h3>exchange</h3>
-					<div class="tsd-signature tsd-kind-icon">exchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="last" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> last</h3>
+					<div class="tsd-signature tsd-kind-icon">last<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:40</li>
+							<li>Defined in endpoints/stock-fundamentals/Earnings.ts:24</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>refers to Exchange using IEX Supported Exchanges list</p>
+							<p>Number of quarters or years to return. Default is 1.</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="region" class="tsd-anchor"></a>
-					<h3>region</h3>
-					<div class="tsd-signature tsd-kind-icon">region<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="period" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> period</h3>
+					<div class="tsd-signature tsd-kind-icon">period<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:38</li>
+							<li>Defined in endpoints/stock-fundamentals/Earnings.ts:26</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>refers to the country code for the symbol using ISO 3166-1 alpha-2</p>
-					</div></div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="securityname" class="tsd-anchor"></a>
-					<h3>security<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">security<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:19</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Name of the security</p>
-					</div></div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="securitytype" class="tsd-anchor"></a>
-					<h3>security<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">security<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:36</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>refers to the common issue type -
-								AD - ADR
-								RE - REIT
-								CE - Closed end fund
-								SI - Secondary Issue
-								LP - Limited Partnerships
-								CS - Common Stock
-								ET - ETF
-								WT - Warrant
-								OEF - Open Ended Fund
-								CEF - Closed Ended Fund
-								PS - Preferred Stock
-								UT- Unit
-							TEMP - Temporary</p>
-					</div></div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="symbol" class="tsd-anchor"></a>
-					<h3>symbol</h3>
-					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:17</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>refers to the symbol represented in Nasdaq Integrated symbology (INET).</p>
+							<p>Allows you to specify annual or quarterly earnings. Values should be annual or quarter. Default is quarter.</p>
 					</div></div>
 				</section>
 			</section>
@@ -192,22 +134,13 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="search.html" class="tsd-kind-icon">Search</a>
+						<a href="earningsparams.html" class="tsd-kind-icon">Earnings<wbr>Params</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#exchange" class="tsd-kind-icon">exchange</a>
+								<a href="earningsparams.html#last" class="tsd-kind-icon">last</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#region" class="tsd-kind-icon">region</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#securityname" class="tsd-kind-icon">security<wbr>Name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#securitytype" class="tsd-kind-icon">security<wbr>Type</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#symbol" class="tsd-kind-icon">symbol</a>
+								<a href="earningsparams.html#period" class="tsd-kind-icon">period</a>
 							</li>
 						</ul>
 					</li>

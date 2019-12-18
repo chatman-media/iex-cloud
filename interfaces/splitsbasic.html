@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Search | iex-ts-client</title>
+	<title>SplitsBasic | iex-ts-client</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="search.html">Search</a>
+					<a href="splitsbasic.html">SplitsBasic</a>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface Search</h1>
+			<h1>Interface SplitsBasic</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Search</span>
+						<span class="target">SplitsBasic</span>
 					</li>
 				</ul>
 			</section>
@@ -88,11 +88,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#exchange" class="tsd-kind-icon">exchange</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#region" class="tsd-kind-icon">region</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#securityname" class="tsd-kind-icon">securityName</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#securitytype" class="tsd-kind-icon">securityType</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="search.html#symbol" class="tsd-kind-icon">symbol</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="splitsbasic.html#declareddate" class="tsd-kind-icon">declaredDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="splitsbasic.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="splitsbasic.html#exdate" class="tsd-kind-icon">exDate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="splitsbasic.html#fromfactor" class="tsd-kind-icon">fromFactor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="splitsbasic.html#ratio" class="tsd-kind-icon">ratio</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="splitsbasic.html#tofactor" class="tsd-kind-icon">toFactor</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,86 +102,88 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exchange" class="tsd-anchor"></a>
-					<h3>exchange</h3>
-					<div class="tsd-signature tsd-kind-icon">exchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="declareddate" class="tsd-anchor"></a>
+					<h3>declared<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">declared<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:40</li>
+							<li>Defined in endpoints/stock-fundamentals/SplitsBasic.ts:21</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>refers to Exchange using IEX Supported Exchanges list</p>
+							<p>refers to the split declaration date</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="region" class="tsd-anchor"></a>
-					<h3>region</h3>
-					<div class="tsd-signature tsd-kind-icon">region<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:38</li>
+							<li>Defined in endpoints/stock-fundamentals/SplitsBasic.ts:32</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>refers to the country code for the symbol using ISO 3166-1 alpha-2</p>
+							<p>Description of the split event.</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="securityname" class="tsd-anchor"></a>
-					<h3>security<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">security<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="exdate" class="tsd-anchor"></a>
+					<h3>ex<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">ex<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:19</li>
+							<li>Defined in endpoints/stock-fundamentals/SplitsBasic.ts:19</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Name of the security</p>
+							<p>refers to the split ex-date</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="securitytype" class="tsd-anchor"></a>
-					<h3>security<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">security<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="fromfactor" class="tsd-anchor"></a>
+					<h3>from<wbr>Factor</h3>
+					<div class="tsd-signature tsd-kind-icon">from<wbr>Factor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:36</li>
+							<li>Defined in endpoints/stock-fundamentals/SplitsBasic.ts:30</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>refers to the common issue type -
-								AD - ADR
-								RE - REIT
-								CE - Closed end fund
-								SI - Secondary Issue
-								LP - Limited Partnerships
-								CS - Common Stock
-								ET - ETF
-								WT - Warrant
-								OEF - Open Ended Fund
-								CEF - Closed Ended Fund
-								PS - Preferred Stock
-								UT- Unit
-							TEMP - Temporary</p>
+							<p>From factor of the split. Used to calculate the split ratio fromfactor/tofactor = ratio (eg ½ = 0.5)</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="symbol" class="tsd-anchor"></a>
-					<h3>symbol</h3>
-					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="ratio" class="tsd-anchor"></a>
+					<h3>ratio</h3>
+					<div class="tsd-signature tsd-kind-icon">ratio<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/Search.ts:17</li>
+							<li>Defined in endpoints/stock-fundamentals/SplitsBasic.ts:26</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>refers to the symbol represented in Nasdaq Integrated symbology (INET).</p>
+							<p>refers to the split ratio. The split ratio is an inverse of the number of shares that a holder of the stock would have after the split divided by the number of shares that the holder had before.
+							For example: Split ratio of .5 = 2 for 1 split.</p>
+					</div></div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="tofactor" class="tsd-anchor"></a>
+					<h3>to<wbr>Factor</h3>
+					<div class="tsd-signature tsd-kind-icon">to<wbr>Factor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in endpoints/stock-fundamentals/SplitsBasic.ts:28</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+						<div class="lead">
+							<p>To factor of the split. Used to calculate the split ratio fromfactor/tofactor = ratio (eg ½ = 0.5)</p>
 					</div></div>
 				</section>
 			</section>
@@ -192,22 +195,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="search.html" class="tsd-kind-icon">Search</a>
+						<a href="splitsbasic.html" class="tsd-kind-icon">Splits<wbr>Basic</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#exchange" class="tsd-kind-icon">exchange</a>
+								<a href="splitsbasic.html#declareddate" class="tsd-kind-icon">declared<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#region" class="tsd-kind-icon">region</a>
+								<a href="splitsbasic.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#securityname" class="tsd-kind-icon">security<wbr>Name</a>
+								<a href="splitsbasic.html#exdate" class="tsd-kind-icon">ex<wbr>Date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#securitytype" class="tsd-kind-icon">security<wbr>Type</a>
+								<a href="splitsbasic.html#fromfactor" class="tsd-kind-icon">from<wbr>Factor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="search.html#symbol" class="tsd-kind-icon">symbol</a>
+								<a href="splitsbasic.html#ratio" class="tsd-kind-icon">ratio</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="splitsbasic.html#tofactor" class="tsd-kind-icon">to<wbr>Factor</a>
 							</li>
 						</ul>
 					</li>
