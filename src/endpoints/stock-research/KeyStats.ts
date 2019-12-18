@@ -4,13 +4,16 @@ import { ApiRequest } from '../../core/ApiRequest';
  * [Key Stats](https://iexcloud.io/docs/api/#key-stats)
  *
  * @param symbol
- * @param stat	Optional. Case sensitive string matching the name of a single key to return one value. Ex: If you only want the next earnings date, you would call `/stock/aapl/stats/nextEarningsDate`
+ * @param stat Case sensitive string matching the name of a single key to return one value. Ex: If you only want the next earnings date, you would call `/stock/aapl/stats/nextEarningsDate`
  */
-export const stats = (symbol: string, stat?: string): Promise<Stat | string | number | null> => {
+export const keyStats = (
+    symbol: string,
+    stat?: string,
+): Promise<KeyStat | string | number | null> => {
     return ApiRequest(`stock/${symbol}/stats/${stat || ''}`);
 };
 
-export interface Stat {
+export interface KeyStat {
     /** Company name of the security */
     readonly companyName: string;
     /** Market cap of the security calculated as shares outstanding * previous day close. */

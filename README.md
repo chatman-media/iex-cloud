@@ -95,11 +95,11 @@ you want a particular API to be developed next, please open an issue.
 ### Stock Profiles
 
 - [x] Company
-- [ ] Insider Roster
-- [ ] Insider Summary
-- [ ] Insider Transactions
+- [x] Insider Roster
+- [x] Insider Summary
+- [x] Insider Transactions
 - [x] Logo
-- [ ] Peer Groups
+- [x] Peer Groups
 
 ### Stock Fundamentals
 
@@ -114,11 +114,11 @@ you want a particular API to be developed next, please open an issue.
 
 ### Stock Research
 
-- [ ] Advanced Stats
-- [ ] Analyst Recommendations
-- [ ] Estimates
-- [ ] Fund Ownership
-- [ ] Institutional Ownership
+- [x] Advanced Stats
+- [x] Analyst Recommendations
+- [x] Estimates
+- [x] Fund Ownership
+- [x] Institutional Ownership
 - [x] Key Stats
 - [x] Price Target
 - [ ] Technical Indicators
