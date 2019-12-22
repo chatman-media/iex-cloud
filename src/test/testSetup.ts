@@ -50,7 +50,7 @@ const config: PollyConfig = {
             // },
         // }
     // },
-    logging: true,
+    // logging: true,
 };
 
 // const context = 
@@ -69,8 +69,8 @@ setupPolly(config);
 //     });
 // });
 
-function stripSecrets(body: string): string {
-    return body
-        ?.replace(process.env.IEX_API_TOKEN, '...')
-        ?.replace(process.env.IEX_API_SECRET_TOKEN, '...');
-}
+// function stripSecrets(body: string): string {
+//     return body
+//         ?.replace(process.env.IEX_API_TOKEN, '...')
+//         ?.replace(process.env.IEX_API_SECRET_TOKEN, '...');
+// }

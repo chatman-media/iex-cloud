@@ -1,6 +1,13 @@
+import { ApiRequest } from '../../core';
 import { Quote } from './Quote';
 
-// https://iexcloud.io/docs/api/#book
+/**
+ * [Book](https://iexcloud.io/docs/api/#book)
+ */
+export const book = (symbol: string): Promise<Book> => {
+    return ApiRequest(`/stock/${symbol}/book`);
+};
+
 export interface Book {
     readonly quote: Quote;
     readonly bids: readonly BidOrAsk[];

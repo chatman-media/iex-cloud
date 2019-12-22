@@ -5,7 +5,7 @@ import { ApiRequest } from '../../core/ApiRequest';
  * This returns 15 minute delayed and 30 day average consolidated volume percentage of a stock, by market. This call will always return 13 values, and will be sorted in ascending order by current day trading volume percentage.
  * @param symbol
  */
-export const VolumeByVenue = (symbol: string): Promise<VolumeByVenue> => {
+export const volumeByVenue = (symbol: string): Promise<VolumeByVenue> => {
     return ApiRequest(`stock/${symbol}/volume-by-venue`);
 };
 
