@@ -5,7 +5,7 @@ import { ApiRequest } from '../../core';
  *
  * @param type Used to specify which quota to return.
  */
-export const Usage = (type?: UsageType): Promise<any> => {
+export const usage = (type?: UsageType): Promise<any> => {
     return ApiRequest(`account/usage/${type || ''}`, { useSecret: true });
 };
 

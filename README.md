@@ -9,7 +9,7 @@
 
 A typescript client for the [IEX Cloud API](https://iexcloud.io/docs/api/).
 
-# Table of Contents
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -54,8 +54,7 @@ metadata().then(result => console.log(result));
 
 ## Implementation Status
 
-Below is a list of the APIs that have and have not been implemented. If
-you want a particular API to be developed next, please open an issue.
+Below is a list of the APIs that have and have not been implemented. If you want a particular API to be developed next, please open an issue.
 
 ### Introduction
 
