@@ -9,5 +9,6 @@ module.exports = {
           diagnostics: false,
       },
   },
-  setupFilesAfterEnv: ['<rootDir>/src/test/testSetup.ts']
+  setupFilesAfterEnv: ['<rootDir>/src/test/testSetup.ts'],
+  collectCoverage: true
 };
