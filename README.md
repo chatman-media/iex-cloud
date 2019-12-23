@@ -4,6 +4,7 @@
 [![Maintenance Status][statusImage]][statusUrl]
 [![Build Status](https://travis-ci.org/zishe/iex-ts-client.svg)](https://travis-ci.org/zishe/iex-ts-client)
 [![License Badge][license badge]][LICENSE]
+[![Gtihub Actions](https://github.com/zishe/iex-ts-client/workflows/Node%20CI/badge.svg)](https://github.com/zishe/iex-ts-client/workflows/)
 <!-- [![CircleCI](https://circleci.com/gh/zishe/iex-ts-client.svg?style=svg)](https://circleci.com/gh/zishe/iex-ts-client) -->
 <!-- [![Dependency Status](https://david-dm.org/zishe/iex-ts-client.svg)](https://david-dm.org/zishe/iex-ts-client)
 [![devDependencies Status](https://david-dm.org/zishe/iex-ts-client/dev-status.svg)](https://david-dm.org/zishe/iex-ts-client?type=dev) -->
