@@ -140,7 +140,7 @@ Below is a list of the APIs that have and have not been implemented. If you want
 
 - [x] Collections
 - [x] Earnings Today
-- [ ] IPO Calendar
+- [x] IPO Calendar
 - [ ] List
 - [ ] Market Volume (U.S.)
 - [ ] Sector Performance
