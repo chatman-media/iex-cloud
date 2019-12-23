@@ -163,6 +163,12 @@
 								<li class="tsd-kind-type-alias"><a href="globals.html#version" class="tsd-kind-icon">Version</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-is-not-exported"><a href="globals.html#context" class="tsd-kind-icon">context</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
@@ -215,6 +221,7 @@
 								<li class="tsd-kind-function"><a href="globals.html#splits" class="tsd-kind-icon">splits</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#splitsbasic" class="tsd-kind-icon">splitsBasic</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-function tsd-is-not-exported"><a href="globals.html#stripsecrets" class="tsd-kind-icon">stripSecrets</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#timeseries" class="tsd-kind-icon">timeSeries</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#timeseriesbyid" class="tsd-kind-icon">timeSeriesById</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#usage" class="tsd-kind-icon">usage</a></li>
@@ -379,6 +386,19 @@
 					<aside class="tsd-sources">
 						<ul>
 							<li>Defined in core/ApiRequest.ts:4</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-is-not-exported">
+					<a name="context" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> context</h3>
+					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Context</span><span class="tsd-signature-symbol"> =&nbsp;setupPolly(config)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in test/testSetup.ts:38</li>
 						</ul>
 					</aside>
 				</section>
@@ -2043,6 +2063,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-not-exported">
+					<a name="stripsecrets" class="tsd-anchor"></a>
+					<h3>strip<wbr>Secrets</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">strip<wbr>Secrets<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in test/testSetup.ts:56</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="timeseries" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> time<wbr>Series</h3>
@@ -2219,6 +2262,72 @@
 						</aside>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="config.matchrequestsby" class="tsd-anchor"></a>
+						<h3>match<wbr>Requests<wbr>By</h3>
+						<div class="tsd-signature tsd-kind-icon">match<wbr>Requests<wbr>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in test/testSetup.ts:22</li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+							<a name="config.matchrequestsby.body" class="tsd-anchor"></a>
+							<h3>body</h3>
+							<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+								<li class="tsd-signature tsd-kind-icon">body<span class="tsd-signature-symbol">(</span>body<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+							</ul>
+							<ul class="tsd-descriptions">
+								<li class="tsd-description">
+									<aside class="tsd-sources">
+										<ul>
+											<li>Defined in test/testSetup.ts:23</li>
+										</ul>
+									</aside>
+									<h4 class="tsd-parameters-title">Parameters</h4>
+									<ul class="tsd-parameters">
+										<li>
+											<h5>body: <span class="tsd-signature-type">string</span></h5>
+										</li>
+									</ul>
+									<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
+							<a name="config.matchrequestsby.url" class="tsd-anchor"></a>
+							<h3>url</h3>
+							<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in test/testSetup.ts:26</li>
+								</ul>
+							</aside>
+							<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+								<a name="config.matchrequestsby.url.query" class="tsd-anchor"></a>
+								<h3>query</h3>
+								<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon">query<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MatchBy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">MatchBy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in test/testSetup.ts:27</li>
+											</ul>
+										</aside>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>params: <span class="tsd-signature-type">MatchBy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">MatchBy</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</section>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal tsd-is-not-exported">
 						<a name="config.persisteroptions" class="tsd-anchor"></a>
 						<h3>persister<wbr>Options</h3>
 						<div class="tsd-signature tsd-kind-icon">persister<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
@@ -2239,7 +2348,7 @@
 							<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
 								<a name="config.persisteroptions.fs.recordingsdir" class="tsd-anchor"></a>
 								<h3>recordings<wbr>Dir</h3>
-								<div class="tsd-signature tsd-kind-icon">recordings<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;../__recordings__&#x27;)</span></div>
+								<div class="tsd-signature tsd-kind-icon">recordings<wbr>Dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;path.resolve(__dirname, &#x27;../../__recordings__&#x27;)</span></div>
 								<aside class="tsd-sources">
 									<ul>
 										<li>Defined in test/testSetup.ts:18</li>
@@ -2492,6 +2601,9 @@
 					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#version" class="tsd-kind-icon">Version</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported root">
+						<a href="globals.html#context" class="tsd-kind-icon">context</a>
+					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#apirequest" class="tsd-kind-icon">Api<wbr>Request</a>
 					</li>
@@ -2638,6 +2750,9 @@
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#status" class="tsd-kind-icon">status</a>
+					</li>
+					<li class=" tsd-kind-function tsd-is-not-exported root">
+						<a href="globals.html#stripsecrets" class="tsd-kind-icon">strip<wbr>Secrets</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#timeseries" class="tsd-kind-icon">time<wbr>Series</a>
