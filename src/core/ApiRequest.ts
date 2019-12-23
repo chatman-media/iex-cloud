@@ -35,7 +35,9 @@ export const ApiRequest = async (
             ? ''
             : `${endpoint.includes('?') ? '&' : '?'}token=${useSecret ? secretToken : apiToken}`);
 
-    const urlWithParams = params ? `${url}&${paramsToQuery(params)}` : url;
+    const urlWithParams = params
+        ? `${url}${url.includes('?') ? '&' : '?'}${paramsToQuery(params)}`
+        : url;
 
     try {
         // console.log(urlWithParams);
