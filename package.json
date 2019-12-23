@@ -27,7 +27,7 @@
     "recordings:clean": "rm -rf ./__recordings__",
     "version": "run-s doc:html doc:publish",
     "prepare-release": "run-s doc:html standard-version doc:publish",
-    "release": "np --no-tests"
+    "release": "np"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
