@@ -16,7 +16,7 @@ A typescript client for the [IEX Cloud API](https://iexcloud.io/docs/api/).
 - [Usage](#usage)
   - [Get an API Token](#get-an-api-token)
   - [Configure](#configure)
-- [Implementation](#implementation-status)
+- [Implementation Status](#implementation-status)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 - [Copyright and License](#copyright-and-license)
