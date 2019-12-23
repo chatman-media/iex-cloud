@@ -24,14 +24,14 @@ const config: PollyConfig = {
             return body ? stripSecrets(body) : body;
         },
         url: {
-            query(params: MatchBy<string, string>): MatchBy<string, string> {                
+            query(params: MatchBy<string, string>): MatchBy<string, string> {
                 Object.entries(params).forEach(([key, value]) => {
                     params[key] = stripSecrets(value);
                 });
                 return params;
-            }
-        }
-    }
+            },
+        },
+    },
     // logging: true,
 };
 
