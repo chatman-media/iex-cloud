@@ -37,7 +37,7 @@ Create an account on [IEX Cloud](https://iexcloud.io) and get a publishable toke
 
 ### Configure
 
-Put your API tokens to your environment file (`.env`) and specify version (default is `v1`) and IEX environment (`cloud`) if needed:
+Put your API tokens to your environment file (`.env`) and specify version (default is `v1`) and IEX environment `cloud` (default) or `sandbox` if needed:
 
 ```sh
 IEX_API_TOKEN=pk_XXXX
