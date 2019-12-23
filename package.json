@@ -1,11 +1,11 @@
 {
-  "name": "iex-ts-client",
+  "name": "iex-cloud",
   "version": "1.0.0",
   "description": "IEX Cloud API TypeScript Client",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/zishe/iex-ts-client",
+  "repository": "https://github.com/zishe/iex-cloud",
   "author": "Alexander Kireev",
   "license": "MIT",
   "keywords": [

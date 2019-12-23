@@ -1,13 +1,13 @@
 # IEX Cloud API TypeScript Client
 
-[![NPM version](https://img.shields.io/npm/v/iex-ts-client.svg?style=flat)](https://www.npmjs.com/package/iex-ts-client)
+[![NPM version](https://img.shields.io/npm/v/iex-cloud.svg?style=flat)](https://www.npmjs.com/package/iex-cloud)
 [![License Badge][license badge]][LICENSE]
-[![Gtihub Actions](https://github.com/zishe/iex-ts-client/workflows/Node%20CI/badge.svg)](https://github.com/zishe/iex-ts-client/workflows/)
-[![Build Status](https://travis-ci.org/zishe/iex-ts-client.svg)](https://travis-ci.org/zishe/iex-ts-client)
+[![Gtihub Actions](https://github.com/zishe/iex-cloud/workflows/Node%20CI/badge.svg)](https://github.com/zishe/iex-cloud/workflows/)
+[![Build Status](https://travis-ci.org/zishe/iex-cloud.svg)](https://travis-ci.org/zishe/iex-cloud)
 [![Maintenance Status][statusImage]][statusUrl]
-<!-- [![CircleCI](https://circleci.com/gh/zishe/iex-ts-client.svg?style=svg)](https://circleci.com/gh/zishe/iex-ts-client) -->
-<!-- [![Dependency Status](https://david-dm.org/zishe/iex-ts-client.svg)](https://david-dm.org/zishe/iex-ts-client)
-[![devDependencies Status](https://david-dm.org/zishe/iex-ts-client/dev-status.svg)](https://david-dm.org/zishe/iex-ts-client?type=dev) -->
+<!-- [![CircleCI](https://circleci.com/gh/zishe/iex-cloud.svg?style=svg)](https://circleci.com/gh/zishe/iex-cloud) -->
+<!-- [![Dependency Status](https://david-dm.org/zishe/iex-cloud.svg)](https://david-dm.org/zishe/iex-cloud)
+[![devDependencies Status](https://david-dm.org/zishe/iex-cloud/dev-status.svg)](https://david-dm.org/zishe/iex-cloud?type=dev) -->
 
 A typescript client for the [IEX Cloud API](https://iexcloud.io/docs/api/).
 
@@ -26,7 +26,7 @@ A typescript client for the [IEX Cloud API](https://iexcloud.io/docs/api/).
 Install package
 
 ```sh
-yarn add iex-ts-client
+yarn add iex-cloud
 ```
 
 ## Usage
@@ -49,7 +49,7 @@ IEX_API_ENV=cloud
 Call any methods:
 
 ```ts
-import { metadata } from 'iex-ts-client';
+import { metadata } from 'iex-cloud';
 
 metadata().then(result => console.log(result));
 ```
@@ -253,7 +253,7 @@ Below is a list of the APIs that have and have not been implemented. If you want
 
 ## Documentation
 
-See documentation [here](https://zishe.github.io/iex-ts-client/)
+See documentation [here](https://zishe.github.io/iex-cloud/)
 
 ## Contributing
 
@@ -266,9 +266,9 @@ See [CONTRIBUTING](.github/CONTRIBUTING.md).
 Data provided for free by [IEX Cloud](https://iexcloud.io), see [terms](https://iexcloud.io/terms/).
 
 [1]: https://iexcloud.io
-[2]: https://github.com/zishe/iex-ts-client/blob/master/examples/iexcloud/README.md
-[iexcloud]: https://github.com/zishe/iex-ts-client
-[LICENSE]: https://github.com/zishe/iex-ts-client/blob/master/LICENSE
+[2]: https://github.com/zishe/iex-cloud/blob/master/examples/iexcloud/README.md
+[iexcloud]: https://github.com/zishe/iex-cloud
+[LICENSE]: https://github.com/zishe/iex-cloud/blob/master/LICENSE
 [license badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[statusUrl]: https://github.com/zishe/iex-ts-client/pulse
-[statusImage]: https://img.shields.io/github/last-commit/zishe/iex-ts-client.svg
+[statusUrl]: https://github.com/zishe/iex-cloud/pulse
+[statusImage]: https://img.shields.io/github/last-commit/zishe/iex-cloud.svg

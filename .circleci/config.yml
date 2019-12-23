@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:latest
-    working_directory: ~/iex-ts-client
+    working_directory: ~/iex-cloud
     steps:
       - checkout
       # Download and cache dependencies

@@ -1,19 +1,19 @@
 # Contributing to IEX-TS-Client
 
-This project is a work of [many contributors](https://github.com/zishe/iex-ts-client/graphs/contributors).
+This project is a work of [many contributors](https://github.com/zishe/iex-cloud/graphs/contributors).
 
-You're encouraged to submit [pull requests](https://github.com/zishe/iex-ts-client/pulls), [propose features and discuss issues](https://github.com/zishe/iex-ts-client/issues).
+You're encouraged to submit [pull requests](https://github.com/zishe/iex-cloud/pulls), [propose features and discuss issues](https://github.com/zishe/iex-cloud/issues).
 
 In the examples below, substitute your Github username for `contributor` in URLs.
 
 ### Fork the Project
 
-Fork the [project on Github](https://github.com/zishe/iex-ts-client) and check out your copy.
+Fork the [project on Github](https://github.com/zishe/iex-cloud) and check out your copy.
 
 ```
-git clone https://github.com/contributor/iex-ts-client.git
-cd iex-ts-client
-git remote add upstream https://github.com/zishe/iex-ts-client.git
+git clone https://github.com/contributor/iex-cloud.git
+cd iex-cloud
+git remote add upstream https://github.com/zishe/iex-cloud.git
 ```
 
 ### Bundle Install and Test
@@ -85,14 +85,14 @@ git push origin my-feature-branch
 
 ### Make a Pull Request
 
-Go to https://github.com/contributor/iex-ts-client and select your feature branch. Click the 'Pull Request' button and fill out the form. Pull requests are usually reviewed within a few days.
+Go to https://github.com/contributor/iex-cloud and select your feature branch. Click the 'Pull Request' button and fill out the form. Pull requests are usually reviewed within a few days.
 
 ### Update CHANGELOG Again
 
 Update the [CHANGELOG](CHANGELOG.md) with the pull request number. A typical entry looks as follows.
 
 ```
-* [#123](https://github.com/zishe/iex-ts-client/pull/123): Reticulated splines - [@contributor](https://github.com/contributor).
+* [#123](https://github.com/zishe/iex-cloud/pull/123): Reticulated splines - [@contributor](https://github.com/contributor).
 ```
 
 Amend your previous commit and force push the changes.
