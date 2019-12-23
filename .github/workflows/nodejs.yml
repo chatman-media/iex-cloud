@@ -26,3 +26,7 @@ jobs:
     - uses: borales/actions-yarn@v2.0.0
       with:
         cmd: test # will run `yarn test` command
+      env:
+        IEX_API_SECRET_TOKEN: ${{secrets.IEX_API_SECRET_TOKEN}}
+        IEX_API_TOKEN: ${{secrets.IEX_API_TOKEN}}
+        IEX_API_ENV: ${{secrets.IEX_API_ENV}}
