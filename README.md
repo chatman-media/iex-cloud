@@ -5,7 +5,6 @@
 [![Gtihub Actions](https://github.com/zishe/iex-cloud/workflows/Node%20CI/badge.svg)](https://github.com/zishe/iex-cloud/workflows/)
 [![Build Status](https://travis-ci.org/zishe/iex-cloud.svg)](https://travis-ci.org/zishe/iex-cloud)
 [![Maintenance Status][statusImage]][statusUrl]
-<!-- [![CircleCI](https://circleci.com/gh/zishe/iex-cloud.svg?style=svg)](https://circleci.com/gh/zishe/iex-cloud) -->
 <!-- [![Dependency Status](https://david-dm.org/zishe/iex-cloud.svg)](https://david-dm.org/zishe/iex-cloud)
 [![devDependencies Status](https://david-dm.org/zishe/iex-cloud/dev-status.svg)](https://david-dm.org/zishe/iex-cloud?type=dev) -->
 
