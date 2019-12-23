@@ -7,7 +7,7 @@ import { ApiRequest } from '../../core';
  * Only included with paid subscription plans
  */
 export const delayedQuote = (symbol: string): Promise<DelayedQuote> => {
-    return ApiRequest(`/stock/${symbol}/delayed-quote`);
+    return ApiRequest(`stock/${symbol}/delayed-quote`);
 };
 
 export interface DelayedQuote {

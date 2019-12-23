@@ -6,7 +6,7 @@ import { ApiRequest } from '../../core/ApiRequest';
  * Used to retrieve account details such as current tier, payment status, message quote usage, etc.
  */
 export const metadata = (): Promise<Metadata> => {
-    return ApiRequest(`/account/metadata`, { useSecret: true });
+    return ApiRequest(`account/metadata`, { useSecret: true });
 };
 
 export interface Metadata {

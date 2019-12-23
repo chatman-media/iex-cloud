@@ -5,7 +5,7 @@ import { Quote } from './Quote';
  * [Book](https://iexcloud.io/docs/api/#book)
  */
 export const book = (symbol: string): Promise<Book> => {
-    return ApiRequest(`/stock/${symbol}/book`);
+    return ApiRequest(`stock/${symbol}/book`);
 };
 
 export interface Book {

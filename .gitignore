@@ -137,5 +137,3 @@ public/
 # End of https://www.gitignore.io/api/node,macos,visualstudiocode
 
 build/
-# FIX: Hide secret token in recordings
-/src/__recordings__

@@ -1,8 +1,8 @@
 // tslint:disable
 import path from 'path';
-// import 'jasmine';
+import 'jasmine';
 
-import { Polly, PollyConfig } from '@pollyjs/core';
+import { Polly, PollyConfig, MatchBy } from '@pollyjs/core';
 import { setupPolly } from 'setup-polly-jest';
 import NodeHttpAdapter from '@pollyjs/adapter-node-http';
 import FSPersister from '@pollyjs/persister-fs';
@@ -15,62 +15,46 @@ const config: PollyConfig = {
     persister: 'fs',
     persisterOptions: {
         fs: {
-            recordingsDir: path.resolve(__dirname, '../__recordings__'),
+            recordingsDir: path.resolve(__dirname, '../../__recordings__'),
         },
     },
     recordFailedRequests: true,
-    // matchRequestsBy: {
-        // body(body: string): string {
-        //     return body ? stripSecrets(body) : body;
-        // },
-        // headers(headers: Record<string, string>): Record<string, string> {
-        //     // If our real/for-recording secrets are different lengths than our fake/for-checkin secrets, content length will be off
-        //     delete headers['content-length'];
-        //     // The user agent has node version + OS version in it.
-        //     delete headers['user-agent'];
-
-        //     Object.entries(headers).forEach(([key, value]) => {
-        //         console.log(value);
-        //         // headers[key] = stripSecrets(value);
-        //     });
-        //     return headers;
-        // },
-        // url: {
-        //     query(params: MatchBy<string, string>): MatchBy<string, string> {
-        //         Object.entries(params).forEach(([key, value]) => {
-        //             params[key] = stripSecrets(value);
-        //         });
-        //         return params;
-        //     },
-            // pathname: (input: MatchBy<string, string>): MatchBy<string, string> {
-            //     Object.entries(input).forEach(([key, value]) => {
-            //         input[key] = stripSecrets(value);
-            //     });
-            //     return input;
-            // },
-        // }
-    // },
+    matchRequestsBy: {
+        body(body: string): string {
+            return body ? stripSecrets(body) : body;
+        },
+        url: {
+            query(params: MatchBy<string, string>): MatchBy<string, string> {                
+                Object.entries(params).forEach(([key, value]) => {
+                    params[key] = stripSecrets(value);
+                });
+                return params;
+            }
+        }
+    }
     // logging: true,
 };
 
-// const context = 
-setupPolly(config);
+const context = setupPolly(config);
 
 // Polly doesn't save the "matchRequestsBy" logic, so manually re-apply it. See https://github.com/Netflix/pollyjs/issues/251#issuecomment-531578600
-// beforeEach(() => {
-//     const polly = context.polly as Polly;
-//     polly.server.any().on('beforePersist', (_req, entry) => {
-//         entry.request.postData.text = stripSecrets(entry.request.postData.text);
-//         entry.request.headers.forEach((h: any) => {
-//             if (typeof h.value === 'string') {
-//                 h.value = stripSecrets(h.value);
-//             }
-//         });
-//     });
-// });
+beforeEach(() => {
+    const polly = context.polly as Polly;
+    polly.server.any().on('beforePersist', (_req, entry) => {
+        if (entry.request.postData) {
+            entry.request.postData.text = stripSecrets(entry.request.postData.text);
+        }
+        entry.request.url = stripSecrets(entry.request.url);
+        entry.request.queryString.forEach((qs: any) => {
+            if (typeof qs.value === 'string') {
+                qs.value = stripSecrets(qs.value);
+            }
+        });
+    });
+});
 
-// function stripSecrets(body: string): string {
-//     return body
-//         ?.replace(process.env.IEX_API_TOKEN, '...')
-//         ?.replace(process.env.IEX_API_SECRET_TOKEN, '...');
-// }
+function stripSecrets(str: string): string {
+    return str
+        .replace(process.env.IEX_API_TOKEN, '...')
+        .replace(process.env.IEX_API_SECRET_TOKEN, '...');
+}
