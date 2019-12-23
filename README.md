@@ -139,7 +139,7 @@ Below is a list of the APIs that have and have not been implemented. If you want
 ### Market Info
 
 - [x] Collections
-- [ ] Earnings Today
+- [x] Earnings Today
 - [ ] IPO Calendar
 - [ ] List
 - [ ] Market Volume (U.S.)
