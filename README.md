@@ -213,10 +213,10 @@ Below is a list of the APIs that have and have not been implemented. If you want
 
 ### Reference Data
 
-- [ ] Search
-- [ ] Cryptocurrency Symbols
-- [ ] FX Symbols
-- [ ] IEX Symbols
+- [x] Search
+- [x] Cryptocurrency Symbols
+- [x] FX Symbols
+- [x] IEX Symbols
 - [ ] International Symbols
 - [ ] International Exchanges
 - [ ] ISIN Mapping
