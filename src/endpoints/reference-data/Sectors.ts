@@ -9,5 +9,5 @@ export const sectors = (): Promise<ReadonlyArray<Sector>> => {
 };
 
 interface Sector {
-    name: string
+    readonly name: string;
 }
