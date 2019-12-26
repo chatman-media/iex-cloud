@@ -37,7 +37,7 @@ export const #{method_name} = (): Promise<#{formatted_name}> => {
 ")
     end
 
-    spec_file_name = "#{dir}/#{section}/#{formatted_name}.spec.ts"
+    spec_file_name = "#{dir}/#{section}/#{formatted_name}.test.ts"
     File.open(spec_file_name, 'w') do |f|
       f.write("import { #{method_name} } from './index';
 

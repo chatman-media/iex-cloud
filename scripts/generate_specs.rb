@@ -3,10 +3,10 @@ current_dir = Dir.pwd
 dir = File.join current_dir, 'src', 'endpoints'
 
 Dir[dir + '/**/*.ts'].each do |file|
-  next if file.include? '.spec.ts'
+  next if file.include? '.test.ts'
 
-  spec_file = file.gsub(/\.ts/, '.spec.ts')
-  next if File.exist?(spec_file)
+  test_file = file.gsub(/\.ts/, '.test.ts')
+  next if File.exist?(test_file)
 
   name = file.match(/(\w+)\.ts/)[1]
   next if name == 'index'
@@ -14,7 +14,7 @@ Dir[dir + '/**/*.ts'].each do |file|
   name[0] = name[0].downcase
   puts name
 
-  File.open(spec_file, 'w') do |f|
+  File.open(test_file, 'w') do |f|
     f.write("import { #{name} } from './index';
 
 describe('##{name}', () => {
