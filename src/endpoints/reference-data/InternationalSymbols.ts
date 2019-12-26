@@ -8,11 +8,9 @@ import { SearchSecurityType } from '../reference-data';
 export const internationalSymbols = ({
     region,
     exchange,
-    csv,
 }: Input): Promise<readonly InternationalSymbol[]> => {
-    const params = csv ? { params: { format: 'csv' } } : {};
     const path = region ? `region/${region}` : exchange ? `exchange/${exchange}` : null;
-    return ApiRequest(`ref-data/${path}/symbols`, params);
+    return ApiRequest(`ref-data/${path}/symbols`);
 };
 
 interface Input {
@@ -20,7 +18,6 @@ interface Input {
     readonly region?: string;
     /** Case insensitive string of Exchange using [IEX Supported Exchanges list](https://cloud.iexapis.com/stable/ref-data/exchanges) */
     readonly exchange?: string;
-    readonly csv?: boolean;
 }
 
 export type CommonIssueType = SearchSecurityType;

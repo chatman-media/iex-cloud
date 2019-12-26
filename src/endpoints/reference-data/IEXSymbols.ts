@@ -4,11 +4,9 @@ import { ApiRequest } from '../../core';
  * [IEX Symbols](https://iexcloud.io/docs/api/#iex-symbols)
  *
  * This call returns an array of symbols the Investors Exchange supports for trading. This list is updated daily as of 7:45 a.m. ET. Symbols may be added or removed by the Investors Exchange after the list was produced.
- * @param csv When parameter is not present, format defaults to JSON
  */
-export const iexSymbols = (csv?: boolean): Promise<readonly IEXSymbol[]> => {
-    const params = csv ? { params: { format: 'csv' } } : {};
-    return ApiRequest(`ref-data/iex/symbols`, params);
+export const iexSymbols = (): Promise<readonly IEXSymbol[]> => {
+    return ApiRequest(`ref-data/iex/symbols`);
 };
 
 export interface IEXSymbol {

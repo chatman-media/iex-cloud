@@ -7,11 +7,4 @@ describe('#iexSymbols', () => {
 
         expect(result?.length).toBeGreaterThan(0);
     });
-
-    test('call for csv', async () => {
-        const result = await iexSymbols(true);
-        console.log(result);
-
-        expect(result?.length).toBeGreaterThan(0);
-    });
 });
