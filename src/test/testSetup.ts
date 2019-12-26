@@ -1,6 +1,7 @@
 // tslint:disable
 import path from 'path';
 import 'jasmine';
+import 'jest';
 
 import { Polly, PollyConfig, MatchBy } from '@pollyjs/core';
 import { setupPolly } from 'setup-polly-jest';
@@ -52,6 +53,8 @@ beforeEach(() => {
         });
     });
 });
+
+jest.setTimeout(10000)
 
 function stripSecrets(str: string): string {
     return str
