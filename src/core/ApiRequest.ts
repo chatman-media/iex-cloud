@@ -43,11 +43,10 @@ export const ApiRequest = async (
         // console.log(urlWithParams);
         const response =
             method === 'GET'
-                ? await fetch(urlWithParams, { timeout: 10000 })
+                ? await fetch(urlWithParams)
                 : await fetch(urlWithParams, {
                       body: useSecret ? { ...data, token: secretToken } : data,
                       method,
-                      timeout: 10000
                   });
         const json = await response.json();
         return json;
