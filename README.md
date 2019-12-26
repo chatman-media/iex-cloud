@@ -217,17 +217,17 @@ Below is a list of the APIs that have and have not been implemented. If you want
 - [x] Cryptocurrency Symbols
 - [x] FX Symbols
 - [x] IEX Symbols
-- [ ] International Symbols
-- [ ] International Exchanges
-- [ ] ISIN Mapping
-- [ ] Mutual Fund Symbols
-- [ ] Options Symbols
-- [ ] OTC Symbols
-- [ ] Sectors
-- [ ] Symbols
-- [ ] Tags
-- [ ] U.S. Exchanges
-- [ ] U.S. Holidays and Trading Days
+- [x] International Symbols
+- [x] International Exchanges
+- [x] ISIN Mapping
+- [x] Mutual Fund Symbols
+- [x] Options Symbols
+- [x] OTC Symbols
+- [x] Sectors
+- [x] Symbols
+- [x] Tags
+- [x] U.S. Exchanges
+- [x] U.S. Holidays and Trading Days
 
 ### Investors Exchange Data
 
