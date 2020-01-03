@@ -38,7 +38,7 @@
     "@pollyjs/core": "^3.0.0",
     "@pollyjs/persister-fs": "^3.0.0",
     "@types/jasmine": "^3.5.0",
-    "@types/jest": "^24.0.24",
+    "@types/jest": "^24.0.25",
     "@types/nock": "^11.1.0",
     "@types/node-fetch": "^2.5.4",
     "@types/setup-polly-jest": "^0.5.0",
@@ -57,7 +57,7 @@
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-immutable": "^6.0.1",
-    "typedoc": "^0.15.5",
+    "typedoc": "^0.15.6",
     "typedoc-neo-theme": "^1.0.4",
     "typescript": "^3.7.4"
   }
