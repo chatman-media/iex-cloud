@@ -1,9 +1,11 @@
 # IEX Cloud API TypeScript Client
 
-[![NPM version](https://img.shields.io/npm/v/iex-cloud.svg?style=flat)](https://www.npmjs.com/package/iex-cloud)
+[![NPM version](https://img.shields.io/npm/v/iex-cloud.svg)](https://www.npmjs.com/package/iex-cloud)
 [![License Badge][license badge]][LICENSE]
+[![Build Status](https://img.shields.io/travis/zishe/iex-cloud)](https://travis-ci.org/zishe/iex-cloud)
 [![Gtihub Actions](https://github.com/zishe/iex-cloud/workflows/Node%20CI/badge.svg)](https://github.com/zishe/iex-cloud/workflows/)
-[![Build Status](https://travis-ci.org/zishe/iex-cloud.svg)](https://travis-ci.org/zishe/iex-cloud)
+[![coverage status][coverage badge]][COVERAGE_URL]
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d04cd86be9db4f9aa5196c43720a841f)](https://app.codacy.com/manual/farvistadw/iex-cloud?utm_source=github.com&utm_medium=referral&utm_content=zishe/iex-cloud&utm_campaign=Badge_Grade_Dashboard)
 [![Maintenance Status][statusImage]][statusUrl]
 <!-- [![Dependency Status](https://david-dm.org/zishe/iex-cloud.svg)](https://david-dm.org/zishe/iex-cloud)
 [![devDependencies Status](https://david-dm.org/zishe/iex-cloud/dev-status.svg)](https://david-dm.org/zishe/iex-cloud?type=dev) -->
@@ -272,3 +274,5 @@ Data provided for free by [IEX Cloud](https://iexcloud.io), see [terms](https://
 [license badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [statusUrl]: https://github.com/zishe/iex-cloud/pulse
 [statusImage]: https://img.shields.io/github/last-commit/zishe/iex-cloud.svg
+[COVERAGE_URL]: https://coveralls.io/github/zishe/iex-cloud?branch=master
+[coverage badge]: https://img.shields.io/coveralls/github/zishe/iex-cloud.svg?color=brightgreen
