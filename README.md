@@ -145,7 +145,7 @@ Below is a list of the APIs that have and have not been implemented. If you want
 - [x] List
 - [x] Market Volume (U.S.)
 - [x] Sector Performance
-- [ ] Upcoming Events
+- [x] Upcoming Events
 
 ### News
 
