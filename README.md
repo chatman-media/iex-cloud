@@ -1,5 +1,6 @@
 # IEX Cloud API TypeScript Client
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d04cd86be9db4f9aa5196c43720a841f)](https://app.codacy.com/manual/farvistadw/iex-cloud?utm_source=github.com&utm_medium=referral&utm_content=zishe/iex-cloud&utm_campaign=Badge_Grade_Dashboard)
 [![NPM version](https://img.shields.io/npm/v/iex-cloud.svg?style=flat)](https://www.npmjs.com/package/iex-cloud)
 [![License Badge][license badge]][LICENSE]
 [![Gtihub Actions](https://github.com/zishe/iex-cloud/workflows/Node%20CI/badge.svg)](https://github.com/zishe/iex-cloud/workflows/)
