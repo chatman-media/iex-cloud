@@ -144,7 +144,7 @@ Below is a list of the APIs that have and have not been implemented. If you want
 - [x] IPO Calendar
 - [x] List
 - [x] Market Volume (U.S.)
-- [ ] Sector Performance
+- [x] Sector Performance
 - [ ] Upcoming Events
 
 ### News
