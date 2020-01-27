@@ -7,18 +7,18 @@ import { ApiRequest } from '../../core/ApiRequest';
  * Only available to paid subscribers
  */
 export const ohlc = (symbol: string): Promise<OHLC> => {
-    return ApiRequest(`stock/${symbol}/ohlc`);
+  return ApiRequest(`stock/${symbol}/ohlc`);
 };
 
 export interface OHLC {
-    readonly open: {
-        readonly price: number;
-        readonly time: number;
-    };
-    readonly close: {
-        readonly price: number;
-        readonly time: number;
-    };
-    readonly high: number;
-    readonly low: number;
+  readonly open: {
+    readonly price: number;
+    readonly time: number;
+  };
+  readonly close: {
+    readonly price: number;
+    readonly time: number;
+  };
+  readonly high: number;
+  readonly low: number;
 }

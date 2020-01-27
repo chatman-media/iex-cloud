@@ -11,31 +11,31 @@ import { ApiRequest } from '../../core';
  * @param range 1m default
  */
 export const dividendsBasic = (
-    symbol: string,
-    range?: DividendsRange,
+  symbol: string,
+  range?: DividendsRange,
 ): Promise<readonly DividendsBasic[]> => {
-    return ApiRequest(`stock/${symbol}/dividends/${range}`);
+  return ApiRequest(`stock/${symbol}/dividends/${range}`);
 };
 
 export type DividendsRange = '5y' | '2y' | '1y' | 'ytd' | '6m' | '3m' | '1m' | 'next';
 
 export interface DividendsBasic {
-    /** refers to the dividend ex-date */
-    readonly exDate: string;
-    /** refers to the payment date */
-    readonly paymentDate: string;
-    /** refers to the dividend record date */
-    readonly recordDate: string;
-    /** refers to the dividend declaration date */
-    readonly declaredDate: string;
-    /** refers to the payment amount */
-    readonly amount: number;
-    /** Type of dividend event */
-    readonly flag: string;
-    /** Currency of the dividend */
-    readonly currency: string;
-    /** Description of the dividend event */
-    readonly description: string;
-    /** Frequency of the dividend */
-    readonly frequency: string;
+  /** refers to the dividend ex-date */
+  readonly exDate: string;
+  /** refers to the payment date */
+  readonly paymentDate: string;
+  /** refers to the dividend record date */
+  readonly recordDate: string;
+  /** refers to the dividend declaration date */
+  readonly declaredDate: string;
+  /** refers to the payment amount */
+  readonly amount: number;
+  /** Type of dividend event */
+  readonly flag: string;
+  /** Currency of the dividend */
+  readonly currency: string;
+  /** Description of the dividend event */
+  readonly description: string;
+  /** Frequency of the dividend */
+  readonly frequency: string;
 }

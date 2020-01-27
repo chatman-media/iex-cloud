@@ -7,7 +7,7 @@ import { HistoricalPrice } from './HistoricalPrice';
  * @param symbol
  */
 export const previousDayPrice = (symbol: string): Promise<Partial<HistoricalPrice>> => {
-    return ApiRequest(`stock/${symbol}/previous`);
+  return ApiRequest(`stock/${symbol}/previous`);
 };
 
 /**
@@ -15,5 +15,5 @@ export const previousDayPrice = (symbol: string): Promise<Partial<HistoricalPric
  * This returns previous day adjusted price data for all stocks.
  */
 export const previousDayPrices = (): Promise<ReadonlyArray<Partial<HistoricalPrice>>> => {
-    return ApiRequest(`stock/market/previous`);
+  return ApiRequest(`stock/market/previous`);
 };

@@ -7,12 +7,12 @@ import { ApiRequest } from '../../core';
  * @param allow Pass true to enable Pay-as-you-go, or false to disable.
  */
 export const payAsYouGo = (allow: boolean): Promise<any> => {
-    return ApiRequest(`account/payasyougo`, { method: 'POST', useSecret: true, data: { allow } });
+  return ApiRequest(`account/payasyougo`, { method: 'POST', useSecret: true, data: { allow } });
 };
 
 export interface PayAsYouGoParams {
-    /** Your SK API token. */
-    readonly token: boolean;
-    /** Pass true to enable Pay-as-you-go, or false to disable. */
-    readonly allow: boolean;
+  /** Your SK API token. */
+  readonly token: boolean;
+  /** Pass true to enable Pay-as-you-go, or false to disable. */
+  readonly allow: boolean;
 }

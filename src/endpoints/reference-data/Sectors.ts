@@ -5,9 +5,9 @@ import { ApiRequest } from '../../core';
  * Returns an array of sectors.
  */
 export const sectors = (): Promise<ReadonlyArray<Sector>> => {
-    return ApiRequest(`ref-data/sectors`);
+  return ApiRequest(`ref-data/sectors`);
 };
 
 interface Sector {
-    readonly name: string;
+  readonly name: string;
 }

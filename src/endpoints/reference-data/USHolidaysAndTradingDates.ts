@@ -10,20 +10,20 @@ import { ApiRequest } from '../../core';
  * param startDate  Optional. Used to specify the start date for next or last. Format is YYYYMMDD. Defaults to today.
  */
 export const usHolidaysAndTradingDates = (
-    type: TradingDatesType,
-    direction: TradingDatesDirection = 'next',
-    last: number = 1,
-    startDate?: string,
+  type: TradingDatesType,
+  direction: TradingDatesDirection = 'next',
+  last: number = 1,
+  startDate?: string,
 ): Promise<readonly USHolidaysAndTradingDate[]> => {
-    return ApiRequest(`ref-data/us/dates/${type}/${direction}/${last}/${startDate || ''}`);
+  return ApiRequest(`ref-data/us/dates/${type}/${direction}/${last}/${startDate || ''}`);
 };
 
 export type TradingDatesType = 'trade' | 'holiday';
 export type TradingDatesDirection = 'next' | 'last';
 
 export interface USHolidaysAndTradingDate {
-    /** Trading or holiday date depending on the type specified. Formatted as YYYY-MM-DD. */
-    readonly date: string;
-    /** T+2 trade settlement date depending on the type specified. Formatted as YYYY-MM-DD. */
-    readonly settlementDate: string;
+  /** Trading or holiday date depending on the type specified. Formatted as YYYY-MM-DD. */
+  readonly date: string;
+  /** T+2 trade settlement date depending on the type specified. Formatted as YYYY-MM-DD. */
+  readonly settlementDate: string;
 }

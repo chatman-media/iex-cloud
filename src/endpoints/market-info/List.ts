@@ -10,16 +10,16 @@ export type ListType = 'mostactive' | 'gainers' | 'losers' | 'iexvolume' | 'iexp
  * @param listType
  */
 export const list = (listType: ListType, params?: ListQSParams): Promise<readonly Quote[]> => {
-    return ApiRequest(`stock/market/list/${listType}`, { params });
+  return ApiRequest(`stock/market/list/${listType}`, { params });
 };
 
 export interface ListQSParams {
-    /**
-     * If set to `true`, all percentage values will be multiplied by a factor of 100 (Ex: `/stock/twtr/quote?displayPercent=true`)
-     */
-    readonly displayPercent?: boolean;
-    /**
-     * • Number of items to return, defaults to 10
-     */
-    readonly listLimit?: number;
+  /**
+   * If set to `true`, all percentage values will be multiplied by a factor of 100 (Ex: `/stock/twtr/quote?displayPercent=true`)
+   */
+  readonly displayPercent?: boolean;
+  /**
+   * • Number of items to return, defaults to 10
+   */
+  readonly listLimit?: number;
 }

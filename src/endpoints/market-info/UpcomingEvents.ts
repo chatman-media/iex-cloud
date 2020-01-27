@@ -12,17 +12,17 @@ export type UpcomingEventType = 'events' | 'earnings' | 'dividends' | 'splits' |
  * @param eventType
  */
 export const upcomingEvents = (
-    eventType: UpcomingEventType,
-    symbol?: string,
-    params?: UpcomingEventQSParams,
+  eventType: UpcomingEventType,
+  symbol?: string,
+  params?: UpcomingEventQSParams,
 ): Promise<readonly any[]> => {
-    return ApiRequest(`stock/${symbol || 'market'}/upcoming-${eventType}`, { params });
+  return ApiRequest(`stock/${symbol || 'market'}/upcoming-${eventType}`, { params });
 };
 
 export interface UpcomingEventQSParams {
-    /**
-     * If set to true and passed to upcoming-events or upcoming-earnings, it will return the full estimate object at the full estimate weight.
-     * This can cause the call to be in the millions of messages.
-     */
-    readonly fullUpcomingEarnings?: boolean;
+  /**
+   * If set to true and passed to upcoming-events or upcoming-earnings, it will return the full estimate object at the full estimate weight.
+   * This can cause the call to be in the millions of messages.
+   */
+  readonly fullUpcomingEarnings?: boolean;
 }

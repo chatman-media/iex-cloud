@@ -16,8 +16,8 @@ export type CollectionType = 'sector' | 'tag' | 'list';
  *   You must URL encode the collection name before sending
  */
 export const collections = (
-    collectionType: CollectionType,
-    collectionName: string,
+  collectionType: CollectionType,
+  collectionName: string,
 ): Promise<readonly Quote[]> => {
-    return ApiRequest(`stock/market/collection/${collectionType}`, { params: { collectionName } });
+  return ApiRequest(`stock/market/collection/${collectionType}`, { params: { collectionName } });
 };

@@ -6,5 +6,5 @@ import { ApiRequest } from '../../core/ApiRequest';
  * Only included with paid subscription plans
  */
 export const peerGroups = (symbol: string): Promise<readonly string[]> => {
-    return ApiRequest(`stock/${symbol}/peers`);
+  return ApiRequest(`stock/${symbol}/peers`);
 };

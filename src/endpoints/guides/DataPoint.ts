@@ -7,16 +7,16 @@ import { ApiRequest } from '../../core/ApiRequest';
  * @param symbol
  */
 export const dataPoints = (symbol: string, key?: string): Promise<readonly DataPoint[]> => {
-    return ApiRequest(`data-points/${symbol}/${key || ''}`);
+  return ApiRequest(`data-points/${symbol}/${key || ''}`);
 };
 
 export interface DataPoint {
-    /** Data key used to call a specific data point */
-    readonly key: string;
-    /** Data weight to call the individual data point in number of messages. */
-    readonly weight: number;
-    /** Description of the data point */
-    readonly description: string;
-    /** ISO 8601 formatted date time the data point was last updated. */
-    readonly lastUpdated: string;
+  /** Data key used to call a specific data point */
+  readonly key: string;
+  /** Data weight to call the individual data point in number of messages. */
+  readonly weight: number;
+  /** Description of the data point */
+  readonly description: string;
+  /** ISO 8601 formatted date time the data point was last updated. */
+  readonly lastUpdated: string;
 }
