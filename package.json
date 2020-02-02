@@ -38,6 +38,11 @@
     "@pollyjs/adapter-node-http": "^4.0.0",
     "@pollyjs/core": "^4.0.0",
     "@pollyjs/persister-fs": "^4.0.0",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.0.2",
+    "@semantic-release/release-notes-generator": "^9.0.0",
     "@types/jasmine": "^3.5.1",
     "@types/jest": "^24.9.1",
     "@types/nock": "^11.1.0",
@@ -52,6 +57,7 @@
     "open-cli": "^5.0.0",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
+    "semantic-release": "^17.0.2",
     "setup-polly-jest": "^0.6.0",
     "standard-version": "^7.1.0",
     "trash-cli": "^3.0.0",
@@ -62,5 +68,14 @@
     "typedoc": "^0.16.8",
     "typedoc-neo-theme": "^1.0.4",
     "typescript": "^3.7.5"
-  }
+  },
+  "release": {
+    "plugins": [
+     "@semantic-release/commit-analyzer",
+     "@semantic-release/release-notes-generator",
+     "@semantic-release/changelog",
+     "@semantic-release/git"
+   ],
+   "branch": "master"
+ }
 }
