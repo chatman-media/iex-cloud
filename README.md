@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/iex-cloud.svg)](https://www.npmjs.com/package/iex-cloud)
 [![License Badge][license badge]][LICENSE]
 [![Build Status](https://img.shields.io/travis/zishe/iex-cloud)](https://travis-ci.org/zishe/iex-cloud)
-[![Gtihub Actions](https://github.com/zishe/iex-cloud/workflows/Node%20CI/badge.svg)](https://github.com/zishe/iex-cloud/workflows/)
+[![Gtihub Actions](https://github.com/zishe/iex-cloud/workflows/Node%20CI/badge.svg)](https://github.com/zishe/iex-cloud/actions/)
 [![coverage status][coverage badge]][COVERAGE_URL]
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d04cd86be9db4f9aa5196c43720a841f)](https://app.codacy.com/manual/farvistadw/iex-cloud?utm_source=github.com&utm_medium=referral&utm_content=zishe/iex-cloud&utm_campaign=Badge_Grade_Dashboard)
 [![Maintenance Status][statusImage]][statusUrl]
