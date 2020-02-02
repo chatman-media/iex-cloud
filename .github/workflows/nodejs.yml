@@ -1,31 +1,36 @@
 name: Node CI
 
-on: [push]
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - releases/*
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        node-version: [12.x]
+        os: [ubuntu-latest, mac-latest]
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Use Node.js 12
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 12
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: --ignore-engines install # will run `yarn install` command
+        cmd: --ignore-engines install
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: --ignore-engines build # will run `yarn build` command
+        cmd: --ignore-engines build
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: --ignore-engines test # will run `yarn test` command
+        cmd: --ignore-engines test
       env:
         IEX_API_SECRET_TOKEN: ${{secrets.IEX_API_SECRET_TOKEN}}
         IEX_API_TOKEN: ${{secrets.IEX_API_TOKEN}}
