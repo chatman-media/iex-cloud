@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InternationalExchange | iex-cloud</title>
+	<title>IexUsageConfig | iex-cloud</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="internationalexchange.html">InternationalExchange</a>
+					<a href="iexusageconfig.html">IexUsageConfig</a>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface InternationalExchange</h1>
+			<h1>Interface IexUsageConfig</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">InternationalExchange</span>
+						<span class="target">IexUsageConfig</span>
 					</li>
 				</ul>
 			</section>
@@ -88,11 +88,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#exchange" class="tsd-kind-icon">exchange</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#exchangesuffix" class="tsd-kind-icon">exchangeSuffix</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#mic" class="tsd-kind-icon">mic</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#region" class="tsd-kind-icon">region</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iexusageconfig.html#apienv" class="tsd-kind-icon">apiEnv</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iexusageconfig.html#apitoken" class="tsd-kind-icon">apiToken</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iexusageconfig.html#secrettoken" class="tsd-kind-icon">secretToken</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iexusageconfig.html#version" class="tsd-kind-icon">version</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,74 +100,44 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="apienv" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> api<wbr>Env</h3>
+					<div class="tsd-signature tsd-kind-icon">api<wbr>Env<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:16</li>
+							<li>Defined in core/ApiRequest.ts:17</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Full name of the exchange.</p>
-					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exchange" class="tsd-anchor"></a>
-					<h3>exchange</h3>
-					<div class="tsd-signature tsd-kind-icon">exchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="apitoken" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> api<wbr>Token</h3>
+					<div class="tsd-signature tsd-kind-icon">api<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:12</li>
+							<li>Defined in core/ApiRequest.ts:14</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Exchange abbreviation</p>
-					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exchangesuffix" class="tsd-anchor"></a>
-					<h3>exchange<wbr>Suffix</h3>
-					<div class="tsd-signature tsd-kind-icon">exchange<wbr>Suffix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="secrettoken" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> secret<wbr>Token</h3>
+					<div class="tsd-signature tsd-kind-icon">secret<wbr>Token<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:20</li>
+							<li>Defined in core/ApiRequest.ts:15</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Exchange Suffix to be added for symbols on that exchange</p>
-					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mic" class="tsd-anchor"></a>
-					<h3>mic</h3>
-					<div class="tsd-signature tsd-kind-icon">mic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="version" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> version</h3>
+					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:18</li>
+							<li>Defined in core/ApiRequest.ts:16</li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>Market Identifier Code using ISO 10383</p>
-					</div></div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="region" class="tsd-anchor"></a>
-					<h3>region</h3>
-					<div class="tsd-signature tsd-kind-icon">region<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:14</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>2 letter case insensitive string of country codes using ISO 3166-1 alpha-2</p>
-					</div></div>
 				</section>
 			</section>
 			<!--{&quot;options&quot;:&quot;/Users/alder/Projects/iex-ts-client&quot;,&quot;tsconfig&quot;:&quot;/Users/alder/Projects/iex-ts-client&quot;,&quot;inputFiles&quot;:[&quot;src/&quot;],&quot;mode&quot;:0,&quot;includeDeclarations&quot;:false,&quot;entryPoint&quot;:&quot;&quot;,&quot;exclude&quot;:[&quot;**/*.test.ts&quot;],&quot;externalPattern&quot;:[],&quot;excludeExternals&quot;:false,&quot;excludeNotExported&quot;:false,&quot;excludePrivate&quot;:false,&quot;excludeProtected&quot;:false,&quot;ignoreCompilerErrors&quot;:false,&quot;includes&quot;:&quot;&quot;,&quot;media&quot;:&quot;&quot;,&quot;out&quot;:&quot;build/docs&quot;,&quot;json&quot;:&quot;&quot;,&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;name&quot;:&quot;&quot;,&quot;includeVersion&quot;:false,&quot;readme&quot;:&quot;&quot;,&quot;defaultCategory&quot;:&quot;Other&quot;,&quot;categoryOrder&quot;:[],&quot;categorizeByGroup&quot;:true,&quot;gitRevision&quot;:&quot;&quot;,&quot;gaID&quot;:&quot;&quot;,&quot;gaSite&quot;:&quot;auto&quot;,&quot;hideGenerator&quot;:false,&quot;toc&quot;:[],&quot;disableOutputCheck&quot;:false,&quot;help&quot;:false,&quot;version&quot;:false,&quot;plugin&quot;:[],&quot;logger&quot;:&quot;console&quot;,&quot;listInvalidSymbolLinks&quot;:false}-->
@@ -179,22 +148,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="internationalexchange.html" class="tsd-kind-icon">International<wbr>Exchange</a>
+						<a href="iexusageconfig.html" class="tsd-kind-icon">Iex<wbr>Usage<wbr>Config</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#description" class="tsd-kind-icon">description</a>
+								<a href="iexusageconfig.html#apienv" class="tsd-kind-icon">api<wbr>Env</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#exchange" class="tsd-kind-icon">exchange</a>
+								<a href="iexusageconfig.html#apitoken" class="tsd-kind-icon">api<wbr>Token</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#exchangesuffix" class="tsd-kind-icon">exchange<wbr>Suffix</a>
+								<a href="iexusageconfig.html#secrettoken" class="tsd-kind-icon">secret<wbr>Token</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#mic" class="tsd-kind-icon">mic</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#region" class="tsd-kind-icon">region</a>
+								<a href="iexusageconfig.html#version" class="tsd-kind-icon">version</a>
 							</li>
 						</ul>
 					</li>

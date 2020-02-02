@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InternationalExchange | iex-cloud</title>
+	<title>SectorPerformance | iex-cloud</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,7 +55,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="internationalexchange.html">InternationalExchange</a>
+					<a href="sectorperformance.html">SectorPerformance</a>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface InternationalExchange</h1>
+			<h1>Interface SectorPerformance</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">InternationalExchange</span>
+						<span class="target">SectorPerformance</span>
 					</li>
 				</ul>
 			</section>
@@ -88,11 +88,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#exchange" class="tsd-kind-icon">exchange</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#exchangesuffix" class="tsd-kind-icon">exchangeSuffix</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#mic" class="tsd-kind-icon">mic</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="internationalexchange.html#region" class="tsd-kind-icon">region</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sectorperformance.html#lastupdated" class="tsd-kind-icon">lastUpdated</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sectorperformance.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sectorperformance.html#performance" class="tsd-kind-icon">performance</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="sectorperformance.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -101,73 +100,59 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="lastupdated" class="tsd-anchor"></a>
+					<h3>last<wbr>Updated</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:16</li>
+							<li>Defined in endpoints/market-info/SectorPerformance.ts:21</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Full name of the exchange.</p>
+							<p>Last updated time of the performance metric represented as millisecond epoch.</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exchange" class="tsd-anchor"></a>
-					<h3>exchange</h3>
-					<div class="tsd-signature tsd-kind-icon">exchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:12</li>
+							<li>Defined in endpoints/market-info/SectorPerformance.ts:17</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Exchange abbreviation</p>
+							<p>The name of the sector</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exchangesuffix" class="tsd-anchor"></a>
-					<h3>exchange<wbr>Suffix</h3>
-					<div class="tsd-signature tsd-kind-icon">exchange<wbr>Suffix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="performance" class="tsd-anchor"></a>
+					<h3>performance</h3>
+					<div class="tsd-signature tsd-kind-icon">performance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:20</li>
+							<li>Defined in endpoints/market-info/SectorPerformance.ts:19</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Exchange Suffix to be added for symbols on that exchange</p>
+							<p>Change percent of the sector for the trading day.</p>
 					</div></div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="mic" class="tsd-anchor"></a>
-					<h3>mic</h3>
-					<div class="tsd-signature tsd-kind-icon">mic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:18</li>
+							<li>Defined in endpoints/market-info/SectorPerformance.ts:15</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
-							<p>Market Identifier Code using ISO 10383</p>
-					</div></div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="region" class="tsd-anchor"></a>
-					<h3>region</h3>
-					<div class="tsd-signature tsd-kind-icon">region<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in endpoints/reference-data/InternationalExchanges.ts:14</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-						<div class="lead">
-							<p>2 letter case insensitive string of country codes using ISO 3166-1 alpha-2</p>
+							<p>The type of performance data return. Should always be sector</p>
 					</div></div>
 				</section>
 			</section>
@@ -179,22 +164,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface root">
-						<a href="internationalexchange.html" class="tsd-kind-icon">International<wbr>Exchange</a>
+						<a href="sectorperformance.html" class="tsd-kind-icon">Sector<wbr>Performance</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#description" class="tsd-kind-icon">description</a>
+								<a href="sectorperformance.html#lastupdated" class="tsd-kind-icon">last<wbr>Updated</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#exchange" class="tsd-kind-icon">exchange</a>
+								<a href="sectorperformance.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#exchangesuffix" class="tsd-kind-icon">exchange<wbr>Suffix</a>
+								<a href="sectorperformance.html#performance" class="tsd-kind-icon">performance</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#mic" class="tsd-kind-icon">mic</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="internationalexchange.html#region" class="tsd-kind-icon">region</a>
+								<a href="sectorperformance.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>

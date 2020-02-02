@@ -70,15 +70,17 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1> iex-cloud</h1>
+			<h1>iex-cloud</h1>
 			<div class="tsd-panel tsd-typography">
 				<a href="#iex-cloud-api-typescript-client" id="iex-cloud-api-typescript-client" style="color: inherit; text-decoration: none;">
 					<h1>IEX Cloud API TypeScript Client</h1>
 				</a>
-				<p><a href="https://www.npmjs.com/package/iex-cloud"><img src="https://img.shields.io/npm/v/iex-cloud.svg?style=flat" alt="NPM version"></a>
+				<p><a href="https://www.npmjs.com/package/iex-cloud"><img src="https://img.shields.io/npm/v/iex-cloud.svg" alt="NPM version"></a>
 					<a href="https://github.com/zishe/iex-cloud/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License Badge"></a>
+					<a href="https://travis-ci.org/zishe/iex-cloud"><img src="https://img.shields.io/travis/zishe/iex-cloud" alt="Build Status"></a>
 					<a href="https://github.com/zishe/iex-cloud/workflows/"><img src="https://github.com/zishe/iex-cloud/workflows/Node%20CI/badge.svg" alt="Gtihub Actions"></a>
-					<a href="https://travis-ci.org/zishe/iex-cloud"><img src="https://travis-ci.org/zishe/iex-cloud.svg" alt="Build Status"></a>
+					<a href="https://coveralls.io/github/zishe/iex-cloud?branch=master"><img src="https://img.shields.io/coveralls/github/zishe/iex-cloud.svg?color=brightgreen" alt="coverage status"></a>
+					<a href="https://app.codacy.com/manual/farvistadw/iex-cloud?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zishe/iex-cloud&amp;utm_campaign=Badge_Grade_Dashboard"><img src="https://api.codacy.com/project/badge/Grade/d04cd86be9db4f9aa5196c43720a841f" alt="Codacy Badge"></a>
 				<a href="https://github.com/zishe/iex-cloud/pulse"><img src="https://img.shields.io/github/last-commit/zishe/iex-cloud.svg" alt="Maintenance Status"></a></p>
 				<!-- [![Dependency Status](https://david-dm.org/zishe/iex-cloud.svg)](https://david-dm.org/zishe/iex-cloud)
 [![devDependencies Status](https://david-dm.org/zishe/iex-cloud/dev-status.svg)](https://david-dm.org/zishe/iex-cloud?type=dev) -->
@@ -230,10 +232,10 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					<li><input checked="" disabled="" type="checkbox"> Collections</li>
 					<li><input checked="" disabled="" type="checkbox"> Earnings Today</li>
 					<li><input checked="" disabled="" type="checkbox"> IPO Calendar</li>
-					<li><input disabled="" type="checkbox"> List</li>
-					<li><input disabled="" type="checkbox"> Market Volume (U.S.)</li>
-					<li><input disabled="" type="checkbox"> Sector Performance</li>
-					<li><input disabled="" type="checkbox"> Upcoming Events</li>
+					<li><input checked="" disabled="" type="checkbox"> List</li>
+					<li><input checked="" disabled="" type="checkbox"> Market Volume (U.S.)</li>
+					<li><input checked="" disabled="" type="checkbox"> Sector Performance</li>
+					<li><input checked="" disabled="" type="checkbox"> Upcoming Events</li>
 				</ul>
 				<a href="#news" id="news" style="color: inherit; text-decoration: none;">
 					<h3>News</h3>
@@ -375,7 +377,7 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 				<p><a href="LICENSE.md">MIT License</a> Copyright (c) 2019 <a href="https://github.com/zishe/">Alexander Kireev</a> and <a href="CHANGELOG.md">Contributors</a>.</p>
 				<p>Data provided for free by <a href="https://iexcloud.io">IEX Cloud</a>, see <a href="https://iexcloud.io/terms/">terms</a>.</p>
 			</div>
-			<!--{&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;exclude&quot;:[&quot;**/*.test.ts&quot;],&quot;mode&quot;:0,&quot;out&quot;:&quot;build/docs&quot;}-->
+			<!--{&quot;options&quot;:&quot;/Users/alder/Projects/iex-ts-client&quot;,&quot;tsconfig&quot;:&quot;/Users/alder/Projects/iex-ts-client&quot;,&quot;inputFiles&quot;:[&quot;src/&quot;],&quot;mode&quot;:0,&quot;includeDeclarations&quot;:false,&quot;entryPoint&quot;:&quot;&quot;,&quot;exclude&quot;:[&quot;**/*.test.ts&quot;],&quot;externalPattern&quot;:[],&quot;excludeExternals&quot;:false,&quot;excludeNotExported&quot;:false,&quot;excludePrivate&quot;:false,&quot;excludeProtected&quot;:false,&quot;ignoreCompilerErrors&quot;:false,&quot;includes&quot;:&quot;&quot;,&quot;media&quot;:&quot;&quot;,&quot;out&quot;:&quot;build/docs&quot;,&quot;json&quot;:&quot;&quot;,&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;name&quot;:&quot;&quot;,&quot;includeVersion&quot;:false,&quot;readme&quot;:&quot;&quot;,&quot;defaultCategory&quot;:&quot;Other&quot;,&quot;categoryOrder&quot;:[],&quot;categorizeByGroup&quot;:true,&quot;gitRevision&quot;:&quot;&quot;,&quot;gaID&quot;:&quot;&quot;,&quot;gaSite&quot;:&quot;auto&quot;,&quot;hideGenerator&quot;:false,&quot;toc&quot;:[],&quot;disableOutputCheck&quot;:false,&quot;help&quot;:false,&quot;version&quot;:false,&quot;plugin&quot;:[],&quot;logger&quot;:&quot;console&quot;,&quot;listInvalidSymbolLinks&quot;:false}-->
 		</div>
 		<div class="col-2 col-menu secondary-menu">
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -495,6 +497,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="interfaces/isinmapping.html" class="tsd-kind-icon">ISINMapping</a>
 					</li>
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/iexusageconfig.html" class="tsd-kind-icon">Iex<wbr>Usage<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/incomestatement.html" class="tsd-kind-icon">Income<wbr>Statement</a>
 					</li>
 					<li class=" tsd-kind-interface root">
@@ -503,7 +508,7 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/incomestatementresponse.html" class="tsd-kind-icon">Income<wbr>Statement<wbr>Response</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported root">
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/input.html" class="tsd-kind-icon">Input</a>
 					</li>
 					<li class=" tsd-kind-interface root">
@@ -537,7 +542,13 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="interfaces/largesttrade.html" class="tsd-kind-icon">Largest<wbr>Trade</a>
 					</li>
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/listqsparams.html" class="tsd-kind-icon">ListQSParams</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/logo.html" class="tsd-kind-icon">Logo</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/marketvolume.html" class="tsd-kind-icon">Market<wbr>Volume</a>
 					</li>
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/metadata.html" class="tsd-kind-icon">Metadata</a>
@@ -584,8 +595,11 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/search.html" class="tsd-kind-icon">Search</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported root">
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/sector.html" class="tsd-kind-icon">Sector</a>
+					</li>
+					<li class=" tsd-kind-interface root">
+						<a href="interfaces/sectorperformance.html" class="tsd-kind-icon">Sector<wbr>Performance</a>
 					</li>
 					<li class=" tsd-kind-interface root">
 						<a href="interfaces/securityreclassification.html" class="tsd-kind-icon">Security<wbr>Reclassification</a>
@@ -630,6 +644,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="interfaces/usholidaysandtradingdate.html" class="tsd-kind-icon">USHolidays<wbr>And<wbr>Trading<wbr>Date</a>
 					</li>
 					<li class=" tsd-kind-interface root">
+						<a href="interfaces/upcomingeventqsparams.html" class="tsd-kind-icon">Upcoming<wbr>EventQSParams</a>
+					</li>
+					<li class=" tsd-kind-interface root">
 						<a href="interfaces/volumebyvenue.html" class="tsd-kind-icon">Volume<wbr>ByVenue</a>
 					</li>
 					<li class=" tsd-kind-type-alias root">
@@ -644,11 +661,14 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#dividendsrange" class="tsd-kind-icon">Dividends<wbr>Range</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-is-not-exported root">
+					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#latestsource" class="tsd-kind-icon">Latest<wbr>Source</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-is-not-exported root">
+					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#latesttime" class="tsd-kind-icon">Latest<wbr>Time</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#listtype" class="tsd-kind-icon">List<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#marker" class="tsd-kind-icon">Marker</a>
@@ -687,12 +707,15 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="globals.html#tradingdatestype" class="tsd-kind-icon">Trading<wbr>Dates<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias root">
+						<a href="globals.html#upcomingeventtype" class="tsd-kind-icon">Upcoming<wbr>Event<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#usagetype" class="tsd-kind-icon">Usage<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias root">
 						<a href="globals.html#version" class="tsd-kind-icon">Version</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported root">
+					<li class=" tsd-kind-variable root">
 						<a href="globals.html#context" class="tsd-kind-icon">context</a>
 					</li>
 					<li class=" tsd-kind-function root">
@@ -801,7 +824,13 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="globals.html#largesttrades" class="tsd-kind-icon">largest<wbr>Trades</a>
 					</li>
 					<li class=" tsd-kind-function root">
+						<a href="globals.html#list" class="tsd-kind-icon">list</a>
+					</li>
+					<li class=" tsd-kind-function root">
 						<a href="globals.html#logo" class="tsd-kind-icon">logo</a>
+					</li>
+					<li class=" tsd-kind-function root">
+						<a href="globals.html#marketvolume" class="tsd-kind-icon">market<wbr>Volume</a>
 					</li>
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#messagebudget" class="tsd-kind-icon">message<wbr>Budget</a>
@@ -861,6 +890,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="globals.html#search" class="tsd-kind-icon">search</a>
 					</li>
 					<li class=" tsd-kind-function root">
+						<a href="globals.html#sectorperformance" class="tsd-kind-icon">sector<wbr>Performance</a>
+					</li>
+					<li class=" tsd-kind-function root">
 						<a href="globals.html#sectors" class="tsd-kind-icon">sectors</a>
 					</li>
 					<li class=" tsd-kind-function root">
@@ -881,7 +913,7 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#status" class="tsd-kind-icon">status</a>
 					</li>
-					<li class=" tsd-kind-function tsd-is-not-exported root">
+					<li class=" tsd-kind-function root">
 						<a href="globals.html#stripsecrets" class="tsd-kind-icon">strip<wbr>Secrets</a>
 					</li>
 					<li class=" tsd-kind-function root">
@@ -900,6 +932,9 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 						<a href="globals.html#usexchanges" class="tsd-kind-icon">uSExchanges</a>
 					</li>
 					<li class=" tsd-kind-function root">
+						<a href="globals.html#upcomingevents" class="tsd-kind-icon">upcoming<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-function root">
 						<a href="globals.html#usholidaysandtradingdates" class="tsd-kind-icon">us<wbr>Holidays<wbr>And<wbr>Trading<wbr>Dates</a>
 					</li>
 					<li class=" tsd-kind-function root">
@@ -908,7 +943,7 @@ metadata().then(<span class="hljs-function"><span class="hljs-params">result</sp
 					<li class=" tsd-kind-function root">
 						<a href="globals.html#volumebyvenue" class="tsd-kind-icon">volume<wbr>ByVenue</a>
 					</li>
-					<li class=" tsd-kind-object-literal tsd-is-not-exported root">
+					<li class=" tsd-kind-object-literal root">
 						<a href="globals.html#config" class="tsd-kind-icon">config</a>
 					</li>
 				</ul>
