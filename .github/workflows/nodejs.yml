@@ -19,13 +19,13 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: install # will run `yarn install` command
+        cmd: --ignore-engines install # will run `yarn install` command
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: build # will run `yarn build` command
+        cmd: --ignore-engines build # will run `yarn build` command
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: test # will run `yarn test` command
+        cmd: --ignore-engines test # will run `yarn test` command
       env:
         IEX_API_SECRET_TOKEN: ${{secrets.IEX_API_SECRET_TOKEN}}
         IEX_API_TOKEN: ${{secrets.IEX_API_TOKEN}}
