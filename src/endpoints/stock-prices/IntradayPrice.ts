@@ -12,7 +12,7 @@ export const intradayPrices = (
   symbol: string,
   params?: Partial<IntradayPriceParams>,
 ): Promise<readonly IntradayPrice[]> => {
-  return ApiRequest(`stock/${symbol}/intraday-prices` + paramsToQuery(params));
+  return ApiRequest(`stock/${symbol}/intraday-prices` + paramsToQuery(params, true));
 };
 
 export interface IntradayPrice {
