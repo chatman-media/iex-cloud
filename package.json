@@ -28,7 +28,6 @@
     "recordings:clean": "rm -rf ./__recordings__",
     "version": "run-s doc:html doc:publish",
     "prepare-release": "run-s doc:html standard-version doc:publish",
-    "postinstall": "run-s clean && run-p build:*",
     "release": "np"
   },
   "dependencies": {
