@@ -15,7 +15,7 @@ export const historicalPrices = (
   params?: Partial<HistoricalPriceParams>,
 ): Promise<ReadonlyArray<Partial<HistoricalPrice>>> => {
   const path = `stock/${symbol}/chart/${[range, date].filter(x => isString(x)).join('/')}`;
-  return ApiRequest(path + paramsToQuery(params));
+  return ApiRequest(path + paramsToQuery(params, true));
 };
 
 export interface HistoricalPrice {
