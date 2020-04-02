@@ -263,7 +263,7 @@ See [CONTRIBUTING](.github/CONTRIBUTING.md).
 
 ## Copyright and License
 
-[MIT License](LICENSE.md) Copyright (c) 2019 [Alexander Kireev](https://github.com/zishe/) and [Contributors](CHANGELOG.md).
+[MIT License](LICENSE.md) Copyright (c) 2019 [Alexander Kireev](https://github.com/zishe/) and [Contributors](https://github.com/zishe/iex-cloud/graphs/contributors).
 
 Data provided for free by [IEX Cloud](https://iexcloud.io), see [terms](https://iexcloud.io/terms/).
 
