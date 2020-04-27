@@ -8,8 +8,8 @@ describe('#intradayPrices', () => {
 
   test('call with parameters', async () => {
     const result = await intradayPrices('AAPL', {
-      chartIEXWhenNull: true
+      chartIEXWhenNull: true,
     });
     expect(result).not.toEqual(null);
-  })
+  });
 });
