@@ -1967,22 +1967,38 @@
 					<a name="paramstoquery" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> params<wbr>ToQuery</h3>
 					<ul class="tsd-signatures tsd-kind-function">
-						<li class="tsd-signature tsd-kind-icon">params<wbr>ToQuery<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">params<wbr>ToQuery<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, addQuestionMark<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in utils/paramsToQuery.ts:1</li>
+									<li>Defined in utils/paramsToQuery.ts:7</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Takes an object and turns them into query parameters for a URL</p>
+							</div></div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>params: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+										<div class="lead">
+											<p>Object to convert to query parameters</p>
+									</div></div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> addQuestionMark: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+										<div class="lead">
+											<p>Optional: indicates whether to begin the query parameters with a question mark</p>
+									</div></div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>Query parameters in string format, ready to be used in a URL</p>
 						</li>
 					</ul>
 				</section>
