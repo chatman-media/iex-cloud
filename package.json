@@ -77,5 +77,8 @@
       "@semantic-release/git"
     ],
     "branch": "master"
+  },
+  "np": {
+    "tests": false
   }
 }
