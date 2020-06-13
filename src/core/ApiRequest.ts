@@ -29,16 +29,16 @@ export const ApiRequest = async (
     useSecret: false,
     ...options,
   };
-  const apiToken = process.env.IEX_API_TOKEN || iexConfig.apiToken;
+  const apiToken = process.env.IEX_API_TOKEN || process.env.REACT_APP_IEX_API_TOKEN || iexConfig.apiToken;
 
   // tslint:disable-next-line: no-if-statement
   if (!apiToken) {
     throw new Error('IEX_API_TOKEN not found');
   }
 
-  const secretToken = process.env.IEX_API_SECRET_TOKEN || iexConfig.secretToken;
-  const version = process.env.IEX_API_VERSION || iexConfig.apiToken || 'v1';
-  const apiEnv = process.env.IEX_API_ENV || iexConfig.apiToken || 'cloud';
+  const secretToken = process.env.IEX_API_SECRET_TOKEN || process.env.REACT_APP_IEX_API_SECRET_TOKEN || iexConfig.secretToken;
+  const version = process.env.IEX_API_VERSION || process.env.REACT_APP_IEX_API_VERSION || iexConfig.apiToken || 'v1';
+  const apiEnv = process.env.IEX_API_ENV || process.env.REACT_APP_IEX_API_ENV || iexConfig.apiToken || 'cloud';
 
   const baseUrl = `https://${apiEnv}.iexapis.com/${version}/`;
   const url =
