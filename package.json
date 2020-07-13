@@ -59,7 +59,7 @@
     "rimraf": "^3.0.2",
     "semantic-release": "^17.0.7",
     "setup-polly-jest": "^0.7.0",
-    "standard-version": "^7.1.0",
+    "standard-version": "^8.0.1",
     "trash-cli": "^3.0.0",
     "ts-jest": "^25.4.0",
     "tslint": "^6.1.2",
