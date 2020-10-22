@@ -10,3 +10,4 @@ export * from './stock-prices';
 export * from './stock-profiles';
 export * from './stock-research';
 export * from './system-metadata';
+export * from './treasuries';

@@ -183,7 +183,7 @@ Below is a list of the APIs that have and have not been implemented. If you want
 
 ### Treasuries
 
-- [ ] Daily Treasury Rates
+- [x] Daily Treasury Rates
 
 ### Commodities
 
