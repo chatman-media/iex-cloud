@@ -1,4 +1,5 @@
 export * from './account';
+export * from './ceo-compensation';
 export * from './corporate-actions';
 export * from './guides';
 export * from './market-info';

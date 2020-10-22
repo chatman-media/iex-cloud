@@ -179,7 +179,7 @@ Below is a list of the APIs that have and have not been implemented. If you want
 
 ### CEO Compensation
 
-- [ ] CEO Compensation
+- [x] CEO Compensation
 
 ### Treasuries
 
