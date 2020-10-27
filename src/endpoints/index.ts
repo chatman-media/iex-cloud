@@ -4,6 +4,7 @@ export * from './corporate-actions';
 export * from './guides';
 export * from './market-info';
 export * from './news';
+export * from './options';
 export * from './reference-data';
 export * from './stock-fundamentals';
 export * from './stock-prices';
