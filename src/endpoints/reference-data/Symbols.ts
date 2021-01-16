@@ -18,7 +18,7 @@ export interface TradeSymbol {
   /** refers to the date the symbol reference data was generated. */
   readonly date: string;
   /** will be true if the symbol is enabled for trading on IEX. */
-  readonly isEnabled: string;
+  readonly isEnabled: boolean;
   /** refers to the common issue type */
   readonly type: SymbolCommonIssueType;
   /** refers to the country code for the symbol using ISO 3166-1 alpha-2 */
