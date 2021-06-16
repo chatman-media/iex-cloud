@@ -44,7 +44,7 @@ Put your API tokens to your environment file (`.env`) and specify version (defau
 ```sh
 IEX_API_TOKEN=pk_XXXX
 IEX_API_SECRET_TOKEN=sk_XXXX
-IEX_API_SECRET_VERSION=beta
+IEX_API_VERSION=beta
 IEX_API_ENV=cloud
 ```
 
