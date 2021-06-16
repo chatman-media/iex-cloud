@@ -37,8 +37,8 @@ export const ApiRequest = async (
   }
 
   const secretToken = process.env.IEX_API_SECRET_TOKEN || process.env.REACT_APP_IEX_API_SECRET_TOKEN || iexConfig.secretToken;
-  const version = process.env.IEX_API_VERSION || process.env.REACT_APP_IEX_API_VERSION || iexConfig.apiToken || 'v1';
-  const apiEnv = process.env.IEX_API_ENV || process.env.REACT_APP_IEX_API_ENV || iexConfig.apiToken || 'cloud';
+  const version = process.env.IEX_API_VERSION || process.env.REACT_APP_IEX_API_VERSION || iexConfig.version || 'v1';
+  const apiEnv = process.env.IEX_API_ENV || process.env.REACT_APP_IEX_API_ENV || iexConfig.apiEnv || 'cloud';
 
   const baseUrl = `https://${apiEnv}.iexapis.com/${version}/`;
   const url =
